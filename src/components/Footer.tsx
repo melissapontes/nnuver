@@ -8,7 +8,6 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary to-accent" />
-              <span className="font-bold text-lg text-foreground">Nefrologia & Urologia Vet</span>
             </div>
           </div>
 
