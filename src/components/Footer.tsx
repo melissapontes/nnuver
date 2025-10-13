@@ -4,28 +4,28 @@ const Footer = () => {
   return (
     <footer id="contato" className="bg-muted/30 border-t border-border">
       <div className="container py-12 md:py-16">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
+        <div className="grid md:grid-cols-2 gap-12 max-w-2xl mx-auto mb-8">
+          <div className="text-center md:text-left">
             <h3 className="font-semibold mb-4 text-foreground">Contato</h3>
             <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-2 text-muted-foreground">
+              <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
                 <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
                 <span>(81) 9999-9999</span>
               </li>
-              <li className="flex items-center gap-2 text-muted-foreground">
+              <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
                 <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
                 <span>contato@nefrovet.com.br</span>
               </li>
-              <li className="flex items-start gap-2 text-muted-foreground">
+              <li className="flex items-start gap-2 text-muted-foreground justify-center md:justify-start">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" aria-hidden="true" />
                 <span>Recife, PE</span>
               </li>
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="font-semibold mb-4 text-foreground">Redes Sociais</h3>
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center md:justify-start">
               <a
                 href="https://www.instagram.com/nnuver.vet/"
                 target="_blank"
