@@ -5,10 +5,6 @@ const Footer = () => {
     <footer id="contato" className="bg-muted/30 border-t border-border">
       <div className="container py-12 md:py-16">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div className="space-y-4">
-            <div className="flex items-center gap-2">
-          </div>
-
           <div>
             <h3 className="font-semibold mb-4 text-foreground">Contato</h3>
             <ul className="space-y-3 text-sm">
