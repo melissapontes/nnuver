@@ -41,7 +41,18 @@ const Footer = () => {
 
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Nefrologia & Urologia Veterinárias em Recife.</p>
-          <p>Desenvolvido por MP Digital AI — Soluções Digitais para a Saúde.</p>
+          <p>
+            Desenvolvido por{" "}
+            <a
+              href="https://www.instagram.com/mpdigital.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              MP Digital AI
+            </a>
+            {" "}— Soluções Digitais para a Saúde.
+          </p>
         </div>
       </div>
     </footer>
