@@ -61,7 +61,9 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-foreground">Redes Sociais</h3>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://www.instagram.com/nnuver.vet/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="Instagram"
               >
