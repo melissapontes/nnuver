@@ -10,7 +10,7 @@ const services = [
   {
     icon: Sunrise,
     title: "Bom dia com Nefrologia",
-    description: "Conteúdo educativo diário sobre saúde renal e bem-estar dos seus animais de estimação.",
+    description: "Conteúdo educativo sobre saúde renal e bem-estar dos seus animais de estimação.",
   },
   {
     icon: Users,
@@ -29,9 +29,7 @@ const ServicesSection = () => {
     <section id="servicos" className="py-20 md:py-32 bg-muted/30">
       <div className="container">
         <div className="text-center mb-16 space-y-4">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            Nossos Serviços
-          </h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">O que fazemos</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
             Oferecemos cuidado completo e especializado para a saúde renal dos seus pets
           </p>
@@ -41,8 +39,8 @@ const ServicesSection = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card"
               >
                 <CardHeader>
@@ -52,9 +50,7 @@ const ServicesSection = () => {
                   <CardTitle className="text-xl text-card-foreground">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-muted-foreground">
-                    {service.description}
-                  </CardDescription>
+                  <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
                 </CardContent>
               </Card>
             );
