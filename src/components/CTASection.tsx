@@ -15,12 +15,7 @@ const CTASection = () => {
             variant="secondary"
             className="bg-background text-foreground hover:bg-background/90 shadow-xl"
             asChild
-          >
-            <a href="#contato" className="flex items-center gap-2">
-              <Calendar className="h-5 w-5" aria-hidden="true" />
-              Entre em contato
-            </a>
-          </Button>
+          ></Button>
         </div>
       </div>
     </section>
