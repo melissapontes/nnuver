@@ -6,7 +6,12 @@ const Footer = () => {
       <div className="container py-12 md:py-16">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
-
+            <div className="flex items-center gap-2">
+              <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary to-accent" />
+              <span className="font-bold text-lg text-foreground">Nefrologia & Urologia Vet</span>
+            </div>
+            <p className="text-sm text-muted-foreground">Cuidado especializado para a saúde renal de cães e gatos</p>
+          </div>
 
           <div>
             <h3 className="font-semibold mb-4 text-foreground">Contato</h3>
