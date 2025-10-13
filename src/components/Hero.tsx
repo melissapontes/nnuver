@@ -27,7 +27,7 @@ const Hero = () => {
               </Button>
 
               <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-secondary" asChild>
-                <a href="#servicos">O que fazemos</a>
+                <a href="#servicos">O que oferecemos</a>
               </Button>
             </div>
           </div>

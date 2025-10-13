@@ -23,7 +23,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#servicos" className="text-muted-foreground hover:text-primary transition-colors">
-                  Serviços
+                  O que oferecemos
                 </a>
               </li>
               <li>

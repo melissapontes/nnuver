@@ -30,7 +30,7 @@ const Header = () => {
             href="#servicos"
             className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
           >
-            Serviços
+            O que oferecemos
           </a>
           <a
             href="#depoimentos"
