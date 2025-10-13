@@ -8,9 +8,7 @@ const CTASection = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">Cuide da saúde renal do seu pet hoje</h2>
 
-          <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">
-            Agende uma consulta com nossa equipe especializada e garanta o bem-estar do seu companheiro
-          </p>
+          <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">Agende uma consulta com nossa equipe</p>
 
           <Button
             size="lg"
