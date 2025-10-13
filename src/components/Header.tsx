@@ -19,19 +19,23 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-full bg-gradient-to-br from-primary to-accent" />
-          <span className="text-xl font-bold text-foreground">
-            Nefrologia & Urologia Vet
-          </span>
+          <span className="text-xl font-bold text-foreground">Nefrologia & Urologia Veterinárias em Recife</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
           <a href="#inicio" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
             Início
           </a>
-          <a href="#servicos" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="#servicos"
+            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+          >
             Serviços
           </a>
-          <a href="#depoimentos" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="#depoimentos"
+            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+          >
             Depoimentos
           </a>
           <a href="#contato" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
