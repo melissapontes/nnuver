@@ -8,13 +8,9 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary to-accent" />
-              <span className="font-bold text-lg text-foreground">
-                Nefrologia & Urologia Vet
-              </span>
+              <span className="font-bold text-lg text-foreground">Nefrologia & Urologia Vet</span>
             </div>
-            <p className="text-sm text-muted-foreground">
-              Cuidado especializado para a saúde renal dos seus pets
-            </p>
+            <p className="text-sm text-muted-foreground">Cuidado especializado para a saúde renal dos seus pets</p>
           </div>
 
           <div>
@@ -56,7 +52,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" aria-hidden="true" />
-                <span>São Paulo, SP</span>
+                <span>Recife, PE</span>
               </li>
             </ul>
           </div>
