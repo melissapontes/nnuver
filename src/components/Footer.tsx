@@ -14,32 +14,6 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4 text-foreground">Links Rápidos</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#inicio" className="text-muted-foreground hover:text-primary transition-colors">
-                  Início
-                </a>
-              </li>
-              <li>
-                <a href="#servicos" className="text-muted-foreground hover:text-primary transition-colors">
-                  O que oferecemos
-                </a>
-              </li>
-              <li>
-                <a href="#depoimentos" className="text-muted-foreground hover:text-primary transition-colors">
-                  Depoimentos
-                </a>
-              </li>
-              <li>
-                <a href="#contato" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contato
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
             <h3 className="font-semibold mb-4 text-foreground">Contato</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground">
