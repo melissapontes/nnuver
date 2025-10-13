@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
-              Cuidando da saúde renal dos cães e gatos.
+              Núcleo de Nefrologia e Urologia veterinárias em Recife.
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
