@@ -7,8 +7,6 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary to-accent" />
-            </div>
           </div>
 
           <div>
