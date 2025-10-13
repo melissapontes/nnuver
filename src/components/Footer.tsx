@@ -10,7 +10,6 @@ const Footer = () => {
               <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary to-accent" />
               <span className="font-bold text-lg text-foreground">Nefrologia & Urologia Vet</span>
             </div>
-            <p className="text-sm text-muted-foreground">Cuidado especializado para a saúde renal de cães e gatos</p>
           </div>
 
           <div>
