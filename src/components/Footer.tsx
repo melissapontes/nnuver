@@ -40,7 +40,8 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Nefrologia & Urologia Veterinária. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Nefrologia & Urologia Veterinárias em Recife.</p>
+          <p>Desenvolvido por MP Digital AI — Soluções Digitais para a Saúde.</p>
         </div>
       </div>
     </footer>
