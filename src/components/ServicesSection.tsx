@@ -1,4 +1,4 @@
-import { Coffee, Sunrise, Users, Video } from "lucide-react";
+import { Coffee, BookOpen, Users, Video } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
@@ -9,7 +9,7 @@ const services = [
       "Live semanal sobre Nefro e Uro. Toda quinta, 10h — no Instagram @nnuver.vet. Linguagem didática e acessível sobre saúde renal de cães e gatos.",
   },
   {
-    icon: Sunrise,
+    icon: BookOpen,
     title: "Centro de Conhecimento",
     description: "Artigos e boas práticas em nefrologia veterinária, do básico ao aplicado",
   },
