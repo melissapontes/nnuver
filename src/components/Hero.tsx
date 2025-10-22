@@ -25,20 +25,7 @@ const Hero = () => {
               Nossa missão e transformar Ciência em cuidado: educação para prevenir, diagnosticar cedo e tratar cães e gatos com doenças do trato urinário.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-md hover:shadow-lg transition-all"
-                asChild
-              >
-                <a href="#contato">Entre em contato</a>
-              </Button>
 
-              <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-secondary" asChild>
-                <a href="#servicos">O que oferecemos</a>
-              </Button>
-            </div>
-          </div>
 
           <div className="space-y-8">
             <div className="relative">
