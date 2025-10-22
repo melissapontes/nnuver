@@ -7,7 +7,7 @@ const testimonials = [
     image: fredImage,
     author: "Frederico Cunegundes",
     title: "Médico Veterinário",
-    description: "Atuação em consultas especializadas em nefrologia para cães e gatos",
+    description: "Atendimento especializadas em nefrologia e urologia de cães e gatos",
     education: "Pós Graduado em Nefrologia e Urologia Veterinária",
   },
   {
@@ -37,8 +37,8 @@ const TestimonialsSection = () => {
               <CardContent className="pt-6 space-y-4">
                 {testimonial.image ? (
                   <div className="flex justify-center mb-4">
-                    <img 
-                      src={testimonial.image} 
+                    <img
+                      src={testimonial.image}
                       alt={testimonial.author}
                       className="w-32 h-32 rounded-full object-cover"
                     />
@@ -46,9 +46,7 @@ const TestimonialsSection = () => {
                 ) : (
                   <Quote className="h-8 w-8 text-primary/40" aria-hidden="true" />
                 )}
-                {testimonial.text && (
-                  <p className="text-lg text-card-foreground italic">"{testimonial.text}"</p>
-                )}
+                {testimonial.text && <p className="text-lg text-card-foreground italic">"{testimonial.text}"</p>}
                 <div className="border-t border-border pt-4">
                   <p className="font-semibold text-card-foreground">{testimonial.author}</p>
                   {testimonial.title && (
@@ -60,9 +58,7 @@ const TestimonialsSection = () => {
                   {testimonial.education && (
                     <p className="text-sm text-muted-foreground mt-2">{testimonial.education}</p>
                   )}
-                  {testimonial.pet && (
-                    <p className="text-sm text-muted-foreground">{testimonial.pet}</p>
-                  )}
+                  {testimonial.pet && <p className="text-sm text-muted-foreground">{testimonial.pet}</p>}
                 </div>
               </CardContent>
             </Card>
