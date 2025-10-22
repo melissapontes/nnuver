@@ -20,9 +20,7 @@ const ServicesSection = () => {
       <div className="container">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">Educação</h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Cuidado completo e especializado para a saúde renal dos seus pets
-          </p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">Saúde urinária em foco!</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
