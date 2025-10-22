@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
 import fredImage from "@/assets/fred.jpeg";
+import melissaImage from "@/assets/melissa.jpg";
 
 const testimonials = [
   {
@@ -11,9 +12,11 @@ const testimonials = [
     education: "Pós Graduado em Nefrologia e Urologia Veterinária",
   },
   {
-    text: "Profissionais extremamente dedicados e atenciosos. Meu cão está muito melhor!",
-    author: "João P.",
-    pet: "tutor do Rex",
+    image: melissaImage,
+    author: "Melissa Pontes",
+    title: "Médica Veterinária",
+    description: "Programa de Aprimoramento em Nefrologia de Pequenos Animais – paNpa",
+    education: "Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP",
   },
   {
     text: "Excelente acompanhamento! Me sinto segura sabendo que minha pet está em boas mãos.",
