@@ -56,7 +56,7 @@ const websites = [
   },
   {
     title: "Minnesota Urolith Center",
-    description: "O padrão global para análise de urólitos e recomendações de tratamento.",
+    description: "Padrão global para análise de urólitos e recomendações de tratamento.",
     link: "https://urolithcenter.org",
     type: "Internacional",
   },
@@ -116,7 +116,10 @@ const Knowledge = () => {
                       <CardContent className="space-y-4">
                         <CardDescription>{article.description}</CardDescription>
                         <Button variant="outline" className="w-full" asChild>
-                          <a href={article.link} className="flex items-center justify-center gap-2 text-accent hover:text-accent">
+                          <a
+                            href={article.link}
+                            className="flex items-center justify-center gap-2 text-accent hover:text-accent"
+                          >
                             Ler artigo
                             <ExternalLink className="h-4 w-4" />
                           </a>
