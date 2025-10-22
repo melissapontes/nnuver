@@ -61,16 +61,16 @@ const websites = [
     type: "Internacional",
   },
   {
-    title: "Veterinary Information Network (VIN)",
-    description: "Comunidade e recursos para veterinários",
-    link: "https://www.vin.com",
+    title: "Minnesota Urolith Center",
+    description: "O padrão global para análise de urólitos e recomendações de tratamento.",
+    link: "https://urolithcenter.org",
     type: "Internacional",
   },
   {
-    title: "Journal of Veterinary Internal Medicine",
-    description: "Artigos científicos em medicina veterinária",
-    link: "https://onlinelibrary.wiley.com/journal/19391676",
-    type: "Periódico",
+    title: "CBNUV",
+    description: "Colégio Brasileiro de Nefrologia e Urologia Veterinárias",
+    link: "https://cbnuv.com.br",
+    type: "Nacional",
   },
 ];
 
