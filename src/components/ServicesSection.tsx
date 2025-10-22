@@ -4,8 +4,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 const services = [
   {
     icon: Shield,
-    title: "Prevenção e cuidados com os rins",
-    description: "Programas de acompanhamento preventivo para manter a saúde renal do seu pet em dia.",
+    title: "Bom dia com Nefrologia",
+    description:
+      "Live semanal sobre Nefro e Uro. Toda quinta, 10h — no Instagram @nnuver.vet. Linguagem didática e acessível sobre saúde renal de cães e gatos.",
   },
   {
     icon: Sunrise,
