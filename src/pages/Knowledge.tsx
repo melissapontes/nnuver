@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { BookOpen, Video, Globe, ExternalLink } from "lucide-react";
+import { BookOpen, Calendar, Globe, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const articles = [
@@ -32,24 +32,18 @@ const articles = [
   },
 ];
 
-const videos = [
+const eventos = [
   {
-    title: "Como avaliar função renal",
-    description: "Interpretação de exames laboratoriais renais",
+    title: "Nefro em Foco",
+    description: "Evento especializado em nefrologia veterinária",
     link: "#",
-    duration: "15 min",
+    date: "A definir",
   },
   {
-    title: "Nutrição para pacientes renais",
-    description: "Dietas terapêuticas e suporte nutricional",
+    title: "CBA - Congresso Brasileiro de Animais",
+    description: "Congresso anual com palestras sobre nefrologia e urologia",
     link: "#",
-    duration: "20 min",
-  },
-  {
-    title: "Ultrassonografia do trato urinário",
-    description: "Técnicas e achados comuns em imagem",
-    link: "#",
-    duration: "25 min",
+    date: "A definir",
   },
 ];
 
@@ -94,9 +88,9 @@ const Knowledge = () => {
                   <BookOpen className="h-4 w-4" />
                   Artigos
                 </TabsTrigger>
-                <TabsTrigger value="videos" className="flex items-center gap-2">
-                  <Video className="h-4 w-4" />
-                  Vídeos
+                <TabsTrigger value="eventos" className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  Eventos
                 </TabsTrigger>
                 <TabsTrigger value="websites" className="flex items-center gap-2">
                   <Globe className="h-4 w-4" />
@@ -133,26 +127,26 @@ const Knowledge = () => {
                 </div>
               </TabsContent>
 
-              <TabsContent value="videos" className="space-y-6">
+              <TabsContent value="eventos" className="space-y-6">
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {videos.map((video, index) => (
+                  {eventos.map((evento, index) => (
                     <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardHeader>
                         <div className="flex items-start justify-between mb-2">
                           <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                            <Video className="h-5 w-5 text-primary" />
+                            <Calendar className="h-5 w-5 text-primary" />
                           </div>
                           <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded">
-                            {video.duration}
+                            {evento.date}
                           </span>
                         </div>
-                        <CardTitle className="text-xl">{video.title}</CardTitle>
+                        <CardTitle className="text-xl">{evento.title}</CardTitle>
                       </CardHeader>
                       <CardContent className="space-y-4">
-                        <CardDescription>{video.description}</CardDescription>
+                        <CardDescription>{evento.description}</CardDescription>
                         <Button variant="outline" className="w-full" asChild>
-                          <a href={video.link} className="flex items-center justify-center gap-2">
-                            Assistir vídeo
+                          <a href={evento.link} className="flex items-center justify-center gap-2">
+                            Ver detalhes
                             <ExternalLink className="h-4 w-4" />
                           </a>
                         </Button>
