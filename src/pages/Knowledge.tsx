@@ -35,15 +35,15 @@ const articles = [
 const eventos = [
   {
     title: "Nefro em Foco",
-    description: "Evento especializado em nefrologia veterinária",
+    description: "Congresso Nefrologia Veterinária em Foco 2026",
     link: "https://congressovetemfoco.com.br/congresso-nefro-em-foco/",
-    date: "Setembro 2025",
+    date: "Abril 2026",
   },
   {
     title: "CBA - Congresso Brasileiro de Animais",
     description: "45º Congresso Brasileiro da Anclivepa",
     link: "https://www.cbago.com.br/",
-    date: "Maio 2025",
+    date: "Maio 2026",
   },
 ];
 
