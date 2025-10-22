@@ -14,8 +14,8 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Ciência que vira cuidado: educação para prevenir, diagnosticar cedo e tratar cães e gatos com doenças do
-              trato urinário.
+              Nossa missão: Transformar Ciência em cuidado: educação para prevenir, diagnosticar cedo e tratar cães e
+              gatos com doenças do trato urinário..
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
