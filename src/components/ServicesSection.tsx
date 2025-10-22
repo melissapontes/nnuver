@@ -10,17 +10,7 @@ const services = [
   {
     icon: Sunrise,
     title: "Centro de Conhecimento",
-    description: "Artigos e boas práticas em nefrologia veterinária, do básico ao aplicado",
-  },
-  {
-    icon: Users,
-    title: "Equipe especializada",
-    description: "Nefrologistas e urologistas veterinários com vasta experiência e dedicação.",
-  },
-  {
-    icon: Video,
-    title: "Atendimento presencial e online",
-    description: "Flexibilidade para cuidar do seu pet onde você estiver, com qualidade e segurança.",
+    description: "Artigos e boas práticas em nefrologia veterinária,do básico ao aplicado",
   },
 ];
 
