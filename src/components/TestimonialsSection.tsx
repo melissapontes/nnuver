@@ -1,11 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote } from "lucide-react";
+import fredImage from "@/assets/fred.jpeg";
 
 const testimonials = [
   {
-    text: "O atendimento mudou a vida do meu gato!",
-    author: "Maria S.",
-    pet: "tutora do Tom",
+    image: fredImage,
+    author: "Frederico Cunegundes",
+    title: "Médico Veterinário",
+    description: "Atuação em consultas especializadas em nefrologia para cães e gatos",
+    education: "Pós Graduado em Nefrologia e Urologia Veterinária",
   },
   {
     text: "Profissionais extremamente dedicados e atenciosos. Meu cão está muito melhor!",
@@ -32,11 +35,34 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border-border bg-card hover:shadow-lg transition-all duration-300">
               <CardContent className="pt-6 space-y-4">
-                <Quote className="h-8 w-8 text-primary/40" aria-hidden="true" />
-                <p className="text-lg text-card-foreground italic">"{testimonial.text}"</p>
+                {testimonial.image ? (
+                  <div className="flex justify-center mb-4">
+                    <img 
+                      src={testimonial.image} 
+                      alt={testimonial.author}
+                      className="w-32 h-32 rounded-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <Quote className="h-8 w-8 text-primary/40" aria-hidden="true" />
+                )}
+                {testimonial.text && (
+                  <p className="text-lg text-card-foreground italic">"{testimonial.text}"</p>
+                )}
                 <div className="border-t border-border pt-4">
                   <p className="font-semibold text-card-foreground">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.pet}</p>
+                  {testimonial.title && (
+                    <p className="text-sm font-medium text-card-foreground mt-1">{testimonial.title}</p>
+                  )}
+                  {testimonial.description && (
+                    <p className="text-sm text-muted-foreground mt-2">{testimonial.description}</p>
+                  )}
+                  {testimonial.education && (
+                    <p className="text-sm text-muted-foreground mt-2">{testimonial.education}</p>
+                  )}
+                  {testimonial.pet && (
+                    <p className="text-sm text-muted-foreground">{testimonial.pet}</p>
+                  )}
                 </div>
               </CardContent>
             </Card>
