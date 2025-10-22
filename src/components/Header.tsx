@@ -43,7 +43,7 @@ const Header = () => {
             href="#depoimentos"
             className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
           >
-            Depoimentos
+            Sobre nós
           </a>
           <a href="#contato" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
             Contato
@@ -59,29 +59,29 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8">
-                <a 
-                  href="#inicio" 
+                <a
+                  href="#inicio"
                   className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                   onClick={() => setOpen(false)}
                 >
-                  Início
+                  Home
                 </a>
-                <a 
-                  href="#servicos" 
+                <a
+                  href="#servicos"
                   className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   Educação
                 </a>
-                <a 
-                  href="#depoimentos" 
+                <a
+                  href="#depoimentos"
                   className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                   onClick={() => setOpen(false)}
                 >
-                  Depoimentos
+                  Sobre nós
                 </a>
-                <a 
-                  href="#contato" 
+                <a
+                  href="#contato"
                   className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                   onClick={() => setOpen(false)}
                 >
