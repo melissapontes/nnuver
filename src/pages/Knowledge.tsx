@@ -37,13 +37,13 @@ const eventos = [
     title: "Nefro em Foco",
     description: "Evento especializado em nefrologia veterinária",
     link: "https://congressovetemfoco.com.br/congresso-nefro-em-foco/",
-    date: "A definir",
+    date: "Setembro 2025",
   },
   {
     title: "CBA - Congresso Brasileiro de Animais",
     description: "Congresso anual com palestras sobre nefrologia e urologia",
     link: "https://www.cbago.com.br/",
-    date: "A definir",
+    date: "Maio 2025",
   },
 ];
 
@@ -139,7 +139,17 @@ const Knowledge = () => {
                             </div>
                             <div className="flex-1">
                               <div className="flex items-center gap-2 mb-2">
-                                <CardTitle className="text-xl">{evento.title}</CardTitle>
+                                <CardTitle className="text-xl">
+                                  <a
+                                    href={evento.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-primary transition-colors flex items-center gap-2"
+                                  >
+                                    {evento.title}
+                                    <ExternalLink className="h-5 w-5" />
+                                  </a>
+                                </CardTitle>
                                 <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded whitespace-nowrap">
                                   {evento.date}
                                 </span>
@@ -147,17 +157,6 @@ const Knowledge = () => {
                               <CardDescription>{evento.description}</CardDescription>
                             </div>
                           </div>
-                          <Button variant="outline" asChild>
-                            <a
-                              href={evento.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex items-center gap-2 whitespace-nowrap"
-                            >
-                              Ver detalhes
-                              <ExternalLink className="h-4 w-4" />
-                            </a>
-                          </Button>
                         </div>
                       </CardHeader>
                     </Card>
