@@ -14,7 +14,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Nossa missão e transformar Ciência em cuidado: educação para prevenir, diagnosticar cedo e tratar cães e
+              Nossa missão e transformar Ciência em cuidado: educar para prevenir, diagnosticar cedo e tratar cães e
               gatos com doenças do trato urinário.
             </p>
 
