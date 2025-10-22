@@ -26,7 +26,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-full bg-gradient-to-br from-primary to-accent" />
-          <span className="text-xl font-bold text-foreground">Nnuver</span>
+          <span className="text-xl font-bold text-foreground">NNUVER</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-6">
