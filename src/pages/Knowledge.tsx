@@ -7,29 +7,29 @@ import { Button } from "@/components/ui/button";
 
 const articles = [
   {
-    title: "Insuficiência Renal Crônica em Cães",
+    title: "Doença Renal Crônica em Cães",
     description: "Entenda as causas, sintomas e tratamentos da IRC em cães",
     link: "#",
-    category: "Nefrologia"
+    category: "Nefrologia",
   },
   {
     title: "Doença Renal em Gatos",
     description: "Guia completo sobre manejo e cuidados renais felinos",
     link: "#",
-    category: "Nefrologia"
+    category: "Nefrologia",
   },
   {
     title: "Infecção do Trato Urinário",
     description: "Diagnóstico e tratamento de ITU em pequenos animais",
     link: "#",
-    category: "Urologia"
+    category: "Urologia",
   },
   {
     title: "Urolitíase em Cães e Gatos",
     description: "Prevenção e manejo de cálculos urinários",
     link: "#",
-    category: "Urologia"
-  }
+    category: "Urologia",
+  },
 ];
 
 const videos = [
@@ -37,41 +37,41 @@ const videos = [
     title: "Como avaliar função renal",
     description: "Interpretação de exames laboratoriais renais",
     link: "#",
-    duration: "15 min"
+    duration: "15 min",
   },
   {
     title: "Nutrição para pacientes renais",
     description: "Dietas terapêuticas e suporte nutricional",
     link: "#",
-    duration: "20 min"
+    duration: "20 min",
   },
   {
     title: "Ultrassonografia do trato urinário",
     description: "Técnicas e achados comuns em imagem",
     link: "#",
-    duration: "25 min"
-  }
+    duration: "25 min",
+  },
 ];
 
 const websites = [
   {
-    title: "International Renal Interest Society (IRIS)",
-    description: "Guidelines e staging de doença renal crônica",
+    title: "Sociedade Internacional de Interesse Renal (IRIS)",
+    description: "A IRIS se dedica a aprimorar os padrões globais da nefrologia de pequenos animais",
     link: "http://www.iris-kidney.com",
-    type: "Internacional"
+    type: "Internacional",
   },
   {
     title: "Veterinary Information Network (VIN)",
     description: "Comunidade e recursos para veterinários",
     link: "https://www.vin.com",
-    type: "Internacional"
+    type: "Internacional",
   },
   {
     title: "Journal of Veterinary Internal Medicine",
     description: "Artigos científicos em medicina veterinária",
     link: "https://onlinelibrary.wiley.com/journal/19391676",
-    type: "Periódico"
-  }
+    type: "Periódico",
+  },
 ];
 
 const Knowledge = () => {
@@ -82,9 +82,7 @@ const Knowledge = () => {
         <section className="py-20 md:py-32">
           <div className="container">
             <div className="text-center mb-12 space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
-                Centro de Conhecimento
-              </h1>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">Centro de Conhecimento</h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
                 Recursos educacionais em nefrologia e urologia veterinárias
               </p>
@@ -182,7 +180,12 @@ const Knowledge = () => {
                       <CardContent className="space-y-4">
                         <CardDescription>{site.description}</CardDescription>
                         <Button variant="outline" className="w-full" asChild>
-                          <a href={site.link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                          <a
+                            href={site.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center gap-2"
+                          >
                             Visitar site
                             <ExternalLink className="h-4 w-4" />
                           </a>
