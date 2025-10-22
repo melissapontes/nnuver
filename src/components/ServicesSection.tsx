@@ -1,5 +1,6 @@
 import { Coffee, BookOpen, Users, Video } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -12,6 +13,7 @@ const services = [
     icon: BookOpen,
     title: "Centro de Conhecimento",
     description: "Artigos e boas práticas em nefrologia veterinária, do básico ao aplicado",
+    link: "/conhecimento",
   },
 ];
 
@@ -27,11 +29,9 @@ const ServicesSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
-            return (
-              <Card
-                key={index}
-                className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card"
-              >
+            
+            const cardContent = (
+              <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card h-full cursor-pointer">
                 <CardHeader>
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                     <Icon className="h-6 w-6 text-primary" aria-hidden="true" />
@@ -42,6 +42,16 @@ const ServicesSection = () => {
                   <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
                 </CardContent>
               </Card>
+            );
+            
+            return service.link ? (
+              <Link key={index} to={service.link} className="block">
+                {cardContent}
+              </Link>
+            ) : (
+              <div key={index}>
+                {cardContent}
+              </div>
             );
           })}
         </div>
