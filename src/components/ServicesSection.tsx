@@ -10,7 +10,7 @@ const services = [
   {
     icon: Sunrise,
     title: "Centro de Conhecimento",
-    description: "Artigos e boas práticas em nefrologia veterinária,do básico ao aplicado",
+    description: "Artigos e boas práticas em nefrologia veterinária, do básico ao aplicado",
   },
 ];
 
