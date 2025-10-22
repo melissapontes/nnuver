@@ -15,7 +15,7 @@ const Hero = () => {
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
               Nossa missão: Transformar Ciência em cuidado: educação para prevenir, diagnosticar cedo e tratar cães e
-              gatos com doenças do trato urinário..
+              gatos com doenças do trato urinário.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
