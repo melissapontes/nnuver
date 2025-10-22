@@ -1,4 +1,12 @@
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-pets.jpg";
 
 const Hero = () => {
@@ -32,13 +40,78 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-3xl" />
-            <img
-              src={heroImage}
-              alt="Cão e gato saudáveis em ambiente veterinário"
-              className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
-            />
+          <div className="space-y-8">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-3xl" />
+              <img
+                src={heroImage}
+                alt="Cão e gato saudáveis em ambiente veterinário"
+                className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
+              />
+            </div>
+
+            <div className="relative">
+              <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4 text-center">
+                Assista nossas lives
+              </h3>
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full"
+              >
+                <CarouselContent>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                    <Card className="border-border">
+                      <CardContent className="p-4">
+                        <div className="aspect-video">
+                          <iframe
+                            className="w-full h-full rounded-lg"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Vídeo 1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                    <Card className="border-border">
+                      <CardContent className="p-4">
+                        <div className="aspect-video">
+                          <iframe
+                            className="w-full h-full rounded-lg"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Vídeo 2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                    <Card className="border-border">
+                      <CardContent className="p-4">
+                        <div className="aspect-video">
+                          <iframe
+                            className="w-full h-full rounded-lg"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Vídeo 3"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-0" />
+                <CarouselNext className="right-0" />
+              </Carousel>
+            </div>
           </div>
         </div>
       </div>
