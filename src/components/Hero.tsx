@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container relative z-10 py-20 md:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
+            <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold leading-tight text-foreground">
               Núcleo de Nefrologia e Urologia Veterinárias em Recife.
             </h1>
 
