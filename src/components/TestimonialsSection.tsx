@@ -18,11 +18,6 @@ const testimonials = [
     description: "Programa de Aprimoramento em Nefrologia de Pequenos Animais – paNpa",
     education: "Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP",
   },
-  {
-    text: "Excelente acompanhamento! Me sinto segura sabendo que minha pet está em boas mãos.",
-    author: "Ana L.",
-    pet: "tutora da Luna",
-  },
 ];
 
 const TestimonialsSection = () => {
