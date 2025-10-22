@@ -36,13 +36,13 @@ const eventos = [
   {
     title: "Nefro em Foco",
     description: "Evento especializado em nefrologia veterinária",
-    link: "#",
+    link: "https://congressovetemfoco.com.br/congresso-nefro-em-foco/",
     date: "A definir",
   },
   {
     title: "CBA - Congresso Brasileiro de Animais",
     description: "Congresso anual com palestras sobre nefrologia e urologia",
-    link: "#",
+    link: "https://www.cbago.com.br/",
     date: "A definir",
   },
 ];
@@ -128,29 +128,38 @@ const Knowledge = () => {
               </TabsContent>
 
               <TabsContent value="eventos" className="space-y-6">
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="flex flex-col gap-4 max-w-4xl mx-auto">
                   {eventos.map((evento, index) => (
-                    <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <Card key={index} className="hover:shadow-lg transition-all duration-300">
                       <CardHeader>
-                        <div className="flex items-start justify-between mb-2">
-                          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                            <Calendar className="h-5 w-5 text-primary" />
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="flex items-start gap-4 flex-1">
+                            <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                              <Calendar className="h-6 w-6 text-primary" />
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center gap-2 mb-2">
+                                <CardTitle className="text-xl">{evento.title}</CardTitle>
+                                <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded whitespace-nowrap">
+                                  {evento.date}
+                                </span>
+                              </div>
+                              <CardDescription>{evento.description}</CardDescription>
+                            </div>
                           </div>
-                          <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded">
-                            {evento.date}
-                          </span>
+                          <Button variant="outline" asChild>
+                            <a
+                              href={evento.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-2 whitespace-nowrap"
+                            >
+                              Ver detalhes
+                              <ExternalLink className="h-4 w-4" />
+                            </a>
+                          </Button>
                         </div>
-                        <CardTitle className="text-xl">{evento.title}</CardTitle>
                       </CardHeader>
-                      <CardContent className="space-y-4">
-                        <CardDescription>{evento.description}</CardDescription>
-                        <Button variant="outline" className="w-full" asChild>
-                          <a href={evento.link} className="flex items-center justify-center gap-2">
-                            Ver detalhes
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        </Button>
-                      </CardContent>
                     </Card>
                   ))}
                 </div>
