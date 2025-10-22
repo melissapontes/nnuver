@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="inicio" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-muted/50 to-background z-0" />
 
-      <div className="container relative z-10 py-12 md:py-20">
+      <div className="container relative z-10 pt-6 pb-12 md:pt-8 md:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
