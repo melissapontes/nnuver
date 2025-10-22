@@ -1,5 +1,6 @@
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -7,6 +8,7 @@ const Header = () => {
     const savedTheme = localStorage.getItem("theme");
     return savedTheme === "dark";
   });
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -48,14 +50,56 @@ const Header = () => {
           </a>
         </nav>
 
-        <Button
-          variant="ghost"
-          size="icon"
-          onClick={() => setIsDark(!isDark)}
-          aria-label={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
-        >
-          {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-        </Button>
+        <div className="flex items-center gap-2">
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button variant="ghost" size="icon" aria-label="Menu">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <nav className="flex flex-col gap-4 mt-8">
+                <a 
+                  href="#inicio" 
+                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  Início
+                </a>
+                <a 
+                  href="#servicos" 
+                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  O que oferecemos
+                </a>
+                <a 
+                  href="#depoimentos" 
+                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  Depoimentos
+                </a>
+                <a 
+                  href="#contato" 
+                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  Contato
+                </a>
+              </nav>
+            </SheetContent>
+          </Sheet>
+
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => setIsDark(!isDark)}
+            aria-label={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
+          >
+            {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+          </Button>
+        </div>
       </div>
     </header>
   );
