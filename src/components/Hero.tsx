@@ -14,7 +14,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Nossa equipe oferece dedicação na prevenção, diagnóstico e tratamento para o seu pet.
+              Dedicação na prevenção, diagnóstico e tratamento para o seu pet.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
