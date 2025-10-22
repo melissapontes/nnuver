@@ -2,6 +2,7 @@ import { Moon, Sun, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import nnuverLogo from "@/assets/nnuver-logo.png";
 
 const Header = () => {
@@ -10,6 +11,8 @@ const Header = () => {
     return savedTheme === "dark";
   });
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -25,14 +28,20 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <img src={nnuverLogo} alt="NNUVER - Núcleo de Nefrologia e Urologia Veterinárias" className="h-12 w-auto" />
-        </div>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#inicio" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-            Home
-          </a>
+          {isHomePage ? (
+            <a href="#inicio" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Home
+            </a>
+          ) : (
+            <Link to="/" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Home
+            </Link>
+          )}
           <a
             href="#servicos"
             className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
@@ -59,13 +68,23 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8">
-                <a
-                  href="#inicio"
-                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => setOpen(false)}
-                >
-                  Home
-                </a>
+                {isHomePage ? (
+                  <a
+                    href="#inicio"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Home
+                  </a>
+                ) : (
+                  <Link
+                    to="/"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Home
+                  </Link>
+                )}
                 <a
                   href="#servicos"
                   className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
