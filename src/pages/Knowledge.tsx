@@ -177,21 +177,20 @@ const Knowledge = () => {
                             {site.type}
                           </span>
                         </div>
-                        <CardTitle className="text-xl">{site.title}</CardTitle>
-                      </CardHeader>
-                      <CardContent className="space-y-4">
-                        <CardDescription>{site.description}</CardDescription>
-                        <Button variant="outline" className="w-full" asChild>
+                        <CardTitle className="text-xl">
                           <a
                             href={site.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-2 text-accent hover:text-accent"
+                            className="text-accent hover:opacity-80 transition-opacity flex items-center gap-2"
                           >
-                            Visitar site
-                            <ExternalLink className="h-4 w-4" />
+                            {site.title}
+                            <ExternalLink className="h-5 w-5" />
                           </a>
-                        </Button>
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <CardDescription>{site.description}</CardDescription>
                       </CardContent>
                     </Card>
                   ))}
