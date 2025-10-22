@@ -41,7 +41,7 @@ const eventos = [
   },
   {
     title: "CBA - Congresso Brasileiro de Animais",
-    description: "Congresso anual com palestras sobre nefrologia e urologia",
+    description: "45º Congresso Brasileiro da Anclivepa",
     link: "https://www.cbago.com.br/",
     date: "Maio 2025",
   },
