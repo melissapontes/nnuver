@@ -44,7 +44,6 @@ const TestimonialsSection = () => {
                 ) : (
                   <Quote className="h-8 w-8 text-primary/40" aria-hidden="true" />
                 )}
-                {testimonial.text && <p className="text-lg text-card-foreground italic">"{testimonial.text}"</p>}
                 <div className="border-t border-border pt-4">
                   <p className="font-semibold text-card-foreground">{testimonial.author}</p>
                   {testimonial.title && (
@@ -56,7 +55,6 @@ const TestimonialsSection = () => {
                   {testimonial.education && (
                     <p className="text-sm text-muted-foreground mt-2">{testimonial.education}</p>
                   )}
-                  {testimonial.pet && <p className="text-sm text-muted-foreground">{testimonial.pet}</p>}
                 </div>
               </CardContent>
             </Card>

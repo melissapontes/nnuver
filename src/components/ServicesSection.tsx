@@ -1,9 +1,9 @@
-import { Shield, Sunrise, Users, Video } from "lucide-react";
+import { Coffee, Sunrise, Users, Video } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const services = [
   {
-    icon: Shield,
+    icon: Coffee,
     title: "Bom dia com Nefrologia",
     description:
       "Live semanal sobre Nefro e Uro. Toda quinta, 10h — no Instagram @nnuver.vet. Linguagem didática e acessível sobre saúde renal de cães e gatos.",
