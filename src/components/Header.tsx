@@ -71,7 +71,7 @@ const Header = () => {
                   className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                   onClick={() => setOpen(false)}
                 >
-                  O que oferecemos
+                  Educação
                 </a>
                 <a 
                   href="#depoimentos" 
