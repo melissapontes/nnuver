@@ -9,12 +9,12 @@ const Hero = () => {
 
       <div className="container relative z-10 pt-6 pb-12 md:pt-8 md:pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 text-center">
             <h1 className="text-xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               Núcleo de Nefrologia e Urologia Veterinárias em Recife
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Nossa missão é transformar Ciência em cuidado: educação para prevenir, diagnosticar cedo e tratar cães e
               gatos com doenças do trato urinário.
             </p>
