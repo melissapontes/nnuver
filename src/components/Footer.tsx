@@ -47,7 +47,7 @@ const Footer = () => {
               href="https://www.instagram.com/mpdigital.ai/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline"
+              className="text-accent hover:underline"
             >
               MP Digital AI
             </a>

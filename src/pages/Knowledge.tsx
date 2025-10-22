@@ -116,7 +116,7 @@ const Knowledge = () => {
                       <CardContent className="space-y-4">
                         <CardDescription>{article.description}</CardDescription>
                         <Button variant="outline" className="w-full" asChild>
-                          <a href={article.link} className="flex items-center justify-center gap-2">
+                          <a href={article.link} className="flex items-center justify-center gap-2 text-accent hover:text-accent">
                             Ler artigo
                             <ExternalLink className="h-4 w-4" />
                           </a>
@@ -144,7 +144,7 @@ const Knowledge = () => {
                                     href={evento.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:text-primary transition-colors flex items-center gap-2"
+                                    className="text-accent hover:opacity-80 transition-opacity flex items-center gap-2"
                                   >
                                     {evento.title}
                                     <ExternalLink className="h-5 w-5" />
@@ -186,7 +186,7 @@ const Knowledge = () => {
                             href={site.link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-2"
+                            className="flex items-center justify-center gap-2 text-accent hover:text-accent"
                           >
                             Visitar site
                             <ExternalLink className="h-4 w-4" />
