@@ -40,7 +40,7 @@ const eventos = [
     date: "Abril 2026",
   },
   {
-    title: "CBA - Congresso Brasileiro de Animais",
+    title: "CBA",
     description: "45º Congresso Brasileiro da Anclivepa",
     link: "https://www.cbago.com.br/",
     date: "Maio 2026",
