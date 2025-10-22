@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
-              Núcleo de Nefrologia e Urologia Veterinárias em Recife.
+              Núcleo de Nefrologia e Urologia Veterinárias em Recife
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
