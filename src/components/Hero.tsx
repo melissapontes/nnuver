@@ -1,11 +1,5 @@
 import { Button } from "@/components/ui/button";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-pets.jpg";
 
@@ -22,10 +16,10 @@ const Hero = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-              Nossa missão e transformar Ciência em cuidado: educação para prevenir, diagnosticar cedo e tratar cães e gatos com doenças do trato urinário.
+              Nossa missão e transformar Ciência em cuidado: educação para prevenir, diagnosticar cedo e tratar cães e
+              gatos com doenças do trato urinário.
             </p>
-
-
+          </div>
 
           <div className="space-y-8">
             <div className="relative">
