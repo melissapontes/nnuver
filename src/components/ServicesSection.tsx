@@ -7,7 +7,7 @@ const services = [
     icon: Coffee,
     title: "Bom dia com Nefrologia",
     description:
-      "Live semanal sobre Nefro e Uro. Toda quinta, 10h — no Instagram @nnuver.vet. Linguagem didática e acessível sobre saúde renal de cães e gatos.",
+      "Live semanal sobre Nefro e Uro. Toda quinta-feira, 10h — no Instagram @nnuver.vet. Linguagem didática e acessível sobre saúde renal de cães e gatos.",
   },
   {
     icon: BookOpen,
@@ -29,7 +29,7 @@ const ServicesSection = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
-            
+
             const cardContent = (
               <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card h-full cursor-pointer">
                 <CardHeader>
@@ -43,15 +43,13 @@ const ServicesSection = () => {
                 </CardContent>
               </Card>
             );
-            
+
             return service.link ? (
               <Link key={index} to={service.link} className="block">
                 {cardContent}
               </Link>
             ) : (
-              <div key={index}>
-                {cardContent}
-              </div>
+              <div key={index}>{cardContent}</div>
             );
           })}
         </div>
