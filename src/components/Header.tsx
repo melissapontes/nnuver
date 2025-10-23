@@ -54,6 +54,12 @@ const Header = () => {
           >
             Sobre nós
           </a>
+          <a
+            href="#parceiros"
+            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+          >
+            Parceiros
+          </a>
           <a href="#contato" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
             Contato
           </a>
@@ -98,6 +104,13 @@ const Header = () => {
                   onClick={() => setOpen(false)}
                 >
                   Sobre nós
+                </a>
+                <a
+                  href="#parceiros"
+                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                  onClick={() => setOpen(false)}
+                >
+                  Parceiros
                 </a>
                 <a
                   href="#contato"
