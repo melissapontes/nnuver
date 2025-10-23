@@ -12,32 +12,31 @@ const testimonials = [
     author: "Frederico Cunegundes",
     title: "Médico Veterinário",
     description: "Atendimento especializadas em nefrologia e urologia de cães e gatos",
-    education: "Pós Graduado em Nefrologia e Urologia Veterinária",
+    education: "Pós Graduado em Nefrologia e Urologia Veterinária. Professor da Atuale Vet Especialização Veterinária",
   },
   {
     image: melissaImage,
     author: "Melissa Pontes",
     title: "Médica Veterinária",
     description: "Programa de Aprimoramento em Nefrologia de Pequenos Animais – paNpa",
-    education: "Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP",
+    education:
+      "Mesrtre em Engenharia de Software. Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP",
   },
   {
     image: telgaImage,
     author: "Telga Craveiro",
     title: "Médica Veterinária",
     description:
-      "Residência e Pós Graduação em Patologia Clínica. Mestrado e Doutorado (ênfase em hemodiálise) - UFRPE",
+      "Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia e urologia  Veterinária da Atuale.",
     education:
-      "Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia Veterinária da Atuale. Pós graduanda em hematologia e canabis.",
+      "Residência (UFRPE) e Pós Graduação em Patologia Clínica (qualittas). Mestrado (tumor de mama em cadelas) e Doutorado (ênfase em hemodiálise) ambos com glutamina - UFRPE. Pós graduanda em hematologia clínica (qualittas) e cannabis (Unyleya).",
   },
   {
     image: eltonImage,
     author: "Elton Medeiros",
     title: "Médico Veterinário",
-    description:
-      "Residência em cirurgia de pequenos animais. Mestre em Ciências Veterinárias - UFRPE",
-    education:
-      "Especialização em terapia intensiva veterinária de pequenos animais. Palestrante e Professor.",
+    description: "Residência em cirurgia de pequenos animais. Mestre em Ciências Veterinárias - UFRPE",
+    education: "Especialização em terapia intensiva veterinária de pequenos animais. Palestrante e Professor.",
   },
   {
     image: allanImage,
@@ -84,7 +83,8 @@ const TestimonialsSection = () => {
                     <p className="text-sm text-muted-foreground mt-2">
                       {testimonial.author === "Telga Craveiro" ? (
                         <>
-                          Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia Veterinária da{" "}
+                          Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia
+                          Veterinária da{" "}
                           <a
                             href="https://www.instagram.com/atualecursos/"
                             target="_blank"
