@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="container py-12 md:py-16">
         <div className="grid md:grid-cols-2 gap-12 max-w-2xl mx-auto mb-8">
           <div className="text-center md:text-left">
-            <h3 className="font-semibold mb-4 text-foreground">Contato</h3>
+            <h3 className="font-semibold mb-4 text-foreground">Fale com a gente</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
                 <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
-                <span>(81) 9999-9999</span>
+                <span>Fred Cunegundes - (81) 99786-5392</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
                 <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
@@ -50,8 +50,8 @@ const Footer = () => {
               className="text-accent hover:underline"
             >
               MP Digital AI
-            </a>
-            {" "}— Soluções Digitais para a Saúde.
+            </a>{" "}
+            — Soluções Digitais para a Saúde.
           </p>
         </div>
       </div>
