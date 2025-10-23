@@ -43,7 +43,10 @@ const testimonials = [
     author: "Allan Kardec",
     title: "Médico Veterinário",
     description:
-      "Especializado no diagnóstico e tratamento de doenças do trato urinário de cães e gatos. Realiza procedimentos como cirurgias renais, cistotomias, implantes de sistemas avançados (Duplo J e SIDUS) e outras cirurgias de alta complexidade.",
+      "Realiza procedimentos como cirurgias renais, cistotomias, implantes de sistemas avançados (Duplo J e SIDUS) e outras cirurgias de alta complexidade.",
+    education: 
+      "Especializado no diagnóstico e tratamento de doenças do trato urinário de cães e gatos.",
+  },
   },
 ];
 
