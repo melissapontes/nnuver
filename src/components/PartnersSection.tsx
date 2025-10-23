@@ -1,4 +1,4 @@
-import atualeImage from "@/assets/atuale.jpeg";
+import atualeImage from "@/assets/atuale-new.png";
 import fitocleenImage from "@/assets/fitocleen.jpeg";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
