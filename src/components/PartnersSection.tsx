@@ -1,5 +1,12 @@
 import atualeImage from "@/assets/atuale.jpeg";
 import fitocleenImage from "@/assets/fitocleen.jpeg";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const partners = [
   {
@@ -27,24 +34,35 @@ const PartnersSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {partners.map((partner, index) => (
-            <a
-              key={index}
-              href={partner.instagramUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center p-8 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:scale-105"
-              aria-label={`Visite ${partner.name} no Instagram`}
-            >
-              <img
-                src={partner.image}
-                alt={`Logo ${partner.name}`}
-                className="w-48 h-48 object-contain"
-              />
-            </a>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-4xl mx-auto"
+        >
+          <CarouselContent>
+            {partners.map((partner, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <a
+                  href={partner.instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center p-8 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:scale-105 h-64"
+                  aria-label={`Visite ${partner.name} no Instagram`}
+                >
+                  <img
+                    src={partner.image}
+                    alt={`Logo ${partner.name}`}
+                    className="w-48 h-48 object-contain"
+                  />
+                </a>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </section>
   );
