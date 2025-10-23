@@ -11,8 +11,9 @@ const testimonials = [
     image: fredImage,
     author: "Frederico Cunegundes",
     title: "Médico Veterinário",
-    description: "Atendimento especializadas em nefrologia e urologia de cães e gatos",
-    education: "Pós Graduado em Nefrologia e Urologia Veterinária. Professor da Atuale Vet Especialização Veterinária",
+    description:
+      "Atendimento especializadas em nefrologia e urologia de cães e gatos. Professor da Atuale Vet Especialização Veterinária",
+    education: "Pós Graduado em Nefrologia e Urologia Veterinária.",
   },
   {
     image: melissaImage,
@@ -27,9 +28,9 @@ const testimonials = [
     author: "Telga Craveiro",
     title: "Médica Veterinária",
     description:
-      "Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia e urologia  Veterinária da Atuale.",
+      "Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia e urologia Veterinária da Atuale.",
     education:
-      "Residência (UFRPE) e Pós Graduação em Patologia Clínica (qualittas). Mestrado (tumor de mama em cadelas) e Doutorado (ênfase em hemodiálise) ambos com glutamina - UFRPE. Pós graduanda em hematologia clínica (qualittas) e cannabis (Unyleya).",
+      "Residência (UFRPE) e Pós Graduação em Patologia Clínica (qualittas). Mestrado (tumor de mama em cadelas) e Doutorado (ênfase em hemodiálise) ambos com glutamina - UFRPE. Pós graduanda em hematologia clínica (Qualittas) e cannabis (Unyleya).",
   },
   {
     image: eltonImage,
@@ -44,8 +45,7 @@ const testimonials = [
     title: "Médico Veterinário",
     description:
       "Realiza procedimentos como cirurgias renais, cistotomias, implantes de sistemas avançados (Duplo J e SIDUS) e outras cirurgias de alta complexidade.",
-    education: 
-      "Especializado no diagnóstico e tratamento de doenças do trato urinário de cães e gatos.",
+    education: "Especializado no diagnóstico e tratamento de doenças do trato urinário de cães e gatos.",
   },
 ];
 
