@@ -4,6 +4,7 @@ import fredImage from "@/assets/fred.jpeg";
 import melissaImage from "@/assets/melissa.jpg";
 import telgaImage from "@/assets/telga.jpeg";
 import eltonImage from "@/assets/elton.jpeg";
+import allanImage from "@/assets/allan.jpg";
 
 const testimonials = [
   {
@@ -37,6 +38,13 @@ const testimonials = [
       "Residência em cirurgia de pequenos animais. Mestre em Ciências Veterinárias - UFRPE",
     education:
       "Especialização em terapia intensiva veterinária de pequenos animais. Palestrante e Professor.",
+  },
+  {
+    image: allanImage,
+    author: "Allan Kardec",
+    title: "Médico Veterinário",
+    description:
+      "Especializado no diagnóstico e tratamento de doenças do trato urinário de cães e gatos. Realiza procedimentos como cirurgias renais, cistotomias, implantes de sistemas avançados (Duplo J e SIDUS) e outras cirurgias de alta complexidade.",
   },
 ];
 
