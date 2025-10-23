@@ -28,7 +28,7 @@ const testimonials = [
     author: "Telga Craveiro",
     title: "Médica Veterinária",
     description:
-      "Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia e urologia Veterinária da Atuale Especialização Veterinária.",
+      "Professora de Graduação e Pós graduação em Medicina Veterinária. Coordenadora da Pós-Graduação em Nefrologia e urologia Veterinária da Atuale Especialização Veterinária.",
     education:
       "Residência (UFRPE) e Pós Graduação em Patologia Clínica (qualittas). Mestrado (tumor de mama em cadelas) e Doutorado (ênfase em hemodiálise) ambos com glutamina - UFRPE. Pós graduanda em hematologia clínica (Qualittas) e cannabis (Unyleya).",
   },
