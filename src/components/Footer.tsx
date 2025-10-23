@@ -18,7 +18,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
                 <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
-                <span>Telga Craveiro - (81) 99212-9805</span>
+                <span>Telga Lucena Craveiro - (81) 99212-9805</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
                 <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
