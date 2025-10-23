@@ -13,7 +13,7 @@ const testimonials = [
     title: "Médico Veterinário",
     description:
       "Atendimento especializadas em nefrologia e urologia de cães e gatos. Professor da Atuale Especialização Veterinária",
-    education: "Pós Graduado em Nefrologia e Urologia Veterinária.",
+    education: "Pós Graduado em Nefrologia e Urologia Veterinárias.",
   },
   {
     image: melissaImage,
