@@ -45,8 +45,8 @@ const PartnersSection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="left-0 h-12 w-12" />
+          <CarouselNext className="right-0 h-12 w-12" />
         </Carousel>
       </div>
     </section>
