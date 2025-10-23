@@ -25,7 +25,7 @@ const testimonials = [
   },
   {
     image: telgaImage,
-    author: "Telga Craveiro",
+    author: "Telga Lucena Craveiro",
     title: "Médica Veterinária",
     description:
       "Professora de Graduação e Pós graduação em Medicina Veterinária. Coordenadora da Pós-Graduação em Nefrologia e urologia Veterinária da Atuale Especialização Veterinária.",
