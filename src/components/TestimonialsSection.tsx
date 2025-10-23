@@ -3,6 +3,7 @@ import { Quote, ExternalLink } from "lucide-react";
 import fredImage from "@/assets/fred.jpeg";
 import melissaImage from "@/assets/melissa.jpg";
 import telgaImage from "@/assets/telga.jpeg";
+import eltonImage from "@/assets/elton.jpeg";
 
 const testimonials = [
   {
@@ -27,6 +28,15 @@ const testimonials = [
       "Residência e Pós Graduação em Patologia Clínica. Mestrado e Doutorado (ênfase em hemodiálise) - UFRPE",
     education:
       "Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia Veterinária da Atuale. Pós graduanda em hematologia e canabis.",
+  },
+  {
+    image: eltonImage,
+    author: "Elton Medeiros",
+    title: "Médico Veterinário",
+    description:
+      "Residência em cirurgia de pequenos animais. Mestre em Ciências Veterinárias - UFRPE",
+    education:
+      "Especialização em terapia intensiva veterinária de pequenos animais. Palestrante e Professor.",
   },
 ];
 
