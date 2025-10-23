@@ -47,7 +47,6 @@ const testimonials = [
     education: 
       "Especializado no diagnóstico e tratamento de doenças do trato urinário de cães e gatos.",
   },
-  },
 ];
 
 const TestimonialsSection = () => {
