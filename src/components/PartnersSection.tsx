@@ -1,5 +1,5 @@
-import atualeImage from "@/assets/atuale-new.png";
-import fitocleenImage from "@/assets/fitocleen.jpeg";
+import atualeImage from "@/assets/atuale.png";
+import fitocleenImage from "@/assets/fitocleen.png";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const partners = [
