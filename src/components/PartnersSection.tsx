@@ -1,5 +1,5 @@
-import atualeImage from "@/assets/atuale.png";
-import fitocleenImage from "@/assets/fitocleen.png";
+import atualeImage from "@/assets/atuale.jpeg";
+import fitocleenImage from "@/assets/fitocleen.jpeg";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const partners = [
@@ -37,10 +37,10 @@ const PartnersSection = () => {
                   href={partner.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center p-8 bg-card rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:scale-105 h-64"
+                  className="flex items-center justify-center p-8 bg-muted/30 rounded-lg border border-border hover:shadow-lg transition-all duration-300 hover:scale-105 h-64"
                   aria-label={`Visite ${partner.name} no Instagram`}
                 >
-                  <img src={partner.image} alt={`Logo ${partner.name}`} className="w-48 h-48 object-contain" />
+                  <img src={partner.image} alt={`Logo ${partner.name}`} className="w-48 h-48 object-contain mix-blend-lighten dark:mix-blend-screen" />
                 </a>
               </CarouselItem>
             ))}
