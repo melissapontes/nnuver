@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { Quote, ExternalLink } from "lucide-react";
 import fredImage from "@/assets/fred.jpeg";
 import melissaImage from "@/assets/melissa.jpg";
 import telgaImage from "@/assets/telga.jpeg";
@@ -63,7 +63,25 @@ const TestimonialsSection = () => {
                     <p className="text-sm text-muted-foreground mt-2">{testimonial.description}</p>
                   )}
                   {testimonial.education && (
-                    <p className="text-sm text-muted-foreground mt-2">{testimonial.education}</p>
+                    <p className="text-sm text-muted-foreground mt-2">
+                      {testimonial.author === "Telga Craveiro" ? (
+                        <>
+                          Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia Veterinária da{" "}
+                          <a
+                            href="https://www.instagram.com/atualecursos/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent hover:underline inline-flex items-center gap-1"
+                          >
+                            Atuale
+                            <ExternalLink className="h-3 w-3" />
+                          </a>
+                          . Pós graduanda em hematologia e canabis.
+                        </>
+                      ) : (
+                        testimonial.education
+                      )}
+                    </p>
                   )}
                 </div>
               </CardContent>
