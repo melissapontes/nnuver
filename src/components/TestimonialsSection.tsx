@@ -82,26 +82,7 @@ const TestimonialsSection = () => {
                     <p className="text-sm text-muted-foreground mt-2">{testimonial.description}</p>
                   )}
                   {testimonial.education && (
-                    <p className="text-sm text-muted-foreground mt-2">
-                      {testimonial.author === "Telga Craveiro" ? (
-                        <>
-                          Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia
-                          Veterinária da{" "}
-                          <a
-                            href="https://www.instagram.com/atualecursos/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-accent hover:underline inline-flex items-center gap-1"
-                          >
-                            Atuale
-                            <ExternalLink className="h-3 w-3" />
-                          </a>
-                          . Pós graduanda em hematologia e canabis.
-                        </>
-                      ) : (
-                        testimonial.education
-                      )}
-                    </p>
+                    <p className="text-sm text-muted-foreground mt-2">{testimonial.education}</p>
                   )}
                 </div>
               </CardContent>
