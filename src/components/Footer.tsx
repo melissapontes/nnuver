@@ -13,8 +13,8 @@ const Footer = () => {
                 <span>Fred Cunegundes - (81) 99786-5392</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
-                <Mail className="h-4 w-4 text-primary" aria-hidden="true" />
-                <span>contato@nefrovet.com.br</span>
+                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                <span>Melissa Pontes - (81) 99872-4964</span>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground justify-center md:justify-start">
                 <MapPin className="h-4 w-4 text-primary mt-0.5" aria-hidden="true" />
