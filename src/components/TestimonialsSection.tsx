@@ -24,7 +24,7 @@ const testimonials = [
     author: "Telga Craveiro",
     title: "Médica Veterinária",
     description:
-      "Residência em patologia clínica e Pós Graduação em Patologia Clínica. Mestrado e Doutorado (ênfase em hemodiálise) - UFRPE",
+      "Residência e Pós Graduação em Patologia Clínica. Mestrado e Doutorado (ênfase em hemodiálise) - UFRPE",
     education:
       "Professora de Graduação e Pós graduação. Coordenadora da Pós-Graduação em Nefrologia Veterinária da Atuale. Pós graduanda em hematologia e canabis.",
   },
