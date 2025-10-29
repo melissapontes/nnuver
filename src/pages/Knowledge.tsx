@@ -33,7 +33,7 @@ const articles = [
 ];
 
 const eventos = [
-   {
+  {
     title: "1º Simpósio NNUVER",
     description: "Nefrologia e Urologia Veterinárias",
     link: "https://www.sympla.com.br/evento/1-simposio-nnuver-de-nefrologia-e-urologia-veterinarias/3192930",
@@ -50,6 +50,12 @@ const eventos = [
     description: "45º Congresso Brasileiro da Anclivepa",
     link: "https://www.cbago.com.br/",
     date: "Maio 2026",
+  },
+  {
+    title: "2cinuv",
+    description: "2º Congresso Internacional de Nefrologia e Urologia Veterinárias",
+    link: "https://www.instagram.com/2cinuv/",
+    date: "Julho 2026",
   },
 ];
 
