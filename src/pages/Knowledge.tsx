@@ -38,7 +38,7 @@ const eventos = [
     description: "Nefrologia e Urologia Veterinárias",
     link: "https://www.sympla.com.br/evento/1-simposio-nnuver-de-nefrologia-e-urologia-veterinarias/3192930",
     date: "Dezembro 2025",
-  }
+  },
   {
     title: "Nefro em Foco",
     description: "Congresso Nefrologia Veterinária em Foco 2026",
