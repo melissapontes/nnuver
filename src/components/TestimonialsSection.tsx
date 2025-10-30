@@ -19,9 +19,9 @@ const testimonials = [
     image: melissaImage,
     author: "Melissa Pontes",
     title: "Médica Veterinária",
-    description: "Programa de Aprimoramento em Nefrologia de Pequenos Animais – paNpa",
+    description: "Prêmio Simpósio Internacional de Nefrologia e Urologia Veterinárias – Versão Ibero-Americana - SINUV (2022)",
     education:
-      "Mestre e Especialista em Engenharia de Software. Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP. Prêmio Simpósio Internacional de Nefrologia e Urologia Veterinárias – Versão Ibero-Americana - SINUV (2022)",
+      "Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP. Mestre e Especialista em Engenharia de Software.",
   },
   {
     image: telgaImage,
