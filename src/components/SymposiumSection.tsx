@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, ArrowRight, Instagram } from "lucide-react";
 
 const SymposiumSection = () => {
   return (
@@ -46,7 +46,18 @@ const SymposiumSection = () => {
                     <div className="bg-primary/10 p-2 rounded-lg flex-shrink-0">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
-                    <span>AtualeVet, Rua Padre Giordano, 169, Boa Viagem, Recife - PE</span>
+                    <div className="flex flex-col gap-1">
+                      <span>AtualeVet, Rua Padre Giordano, 169, Boa Viagem, Recife - PE</span>
+                      <a 
+                        href="https://www.instagram.com/atuale.vet/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm"
+                      >
+                        <Instagram className="w-4 h-4" />
+                        @atuale.vet
+                      </a>
+                    </div>
                   </div>
                 </div>
 
