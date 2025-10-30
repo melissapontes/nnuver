@@ -42,27 +42,60 @@ const Header = () => {
               Home
             </Link>
           )}
-          <a
-            href="#servicos"
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-          >
-            Educação
-          </a>
-          <a
-            href="#depoimentos"
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-          >
-            Sobre nós
-          </a>
-          <a
-            href="#parceiros"
-            className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-          >
-            Parceiros
-          </a>
-          <a href="#contato" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
-            Contato
-          </a>
+          {isHomePage ? (
+            <a
+              href="#servicos"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Educação
+            </a>
+          ) : (
+            <Link
+              to="/#servicos"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Educação
+            </Link>
+          )}
+          {isHomePage ? (
+            <a
+              href="#depoimentos"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Sobre nós
+            </a>
+          ) : (
+            <Link
+              to="/#depoimentos"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Sobre nós
+            </Link>
+          )}
+          {isHomePage ? (
+            <a
+              href="#parceiros"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Parceiros
+            </a>
+          ) : (
+            <Link
+              to="/#parceiros"
+              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+            >
+              Parceiros
+            </Link>
+          )}
+          {isHomePage ? (
+            <a href="#contato" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Contato
+            </a>
+          ) : (
+            <Link to="/#contato" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+              Contato
+            </Link>
+          )}
         </nav>
 
         <div className="flex items-center gap-2">
@@ -91,34 +124,74 @@ const Header = () => {
                     Home
                   </Link>
                 )}
-                <a
-                  href="#servicos"
-                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => setOpen(false)}
-                >
-                  Educação
-                </a>
-                <a
-                  href="#depoimentos"
-                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => setOpen(false)}
-                >
-                  Sobre nós
-                </a>
-                <a
-                  href="#parceiros"
-                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => setOpen(false)}
-                >
-                  Parceiros
-                </a>
-                <a
-                  href="#contato"
-                  className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
-                  onClick={() => setOpen(false)}
-                >
-                  Contato
-                </a>
+                {isHomePage ? (
+                  <a
+                    href="#servicos"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Educação
+                  </a>
+                ) : (
+                  <Link
+                    to="/#servicos"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Educação
+                  </Link>
+                )}
+                {isHomePage ? (
+                  <a
+                    href="#depoimentos"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Sobre nós
+                  </a>
+                ) : (
+                  <Link
+                    to="/#depoimentos"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Sobre nós
+                  </Link>
+                )}
+                {isHomePage ? (
+                  <a
+                    href="#parceiros"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Parceiros
+                  </a>
+                ) : (
+                  <Link
+                    to="/#parceiros"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Parceiros
+                  </Link>
+                )}
+                {isHomePage ? (
+                  <a
+                    href="#contato"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Contato
+                  </a>
+                ) : (
+                  <Link
+                    to="/#contato"
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                    onClick={() => setOpen(false)}
+                  >
+                    Contato
+                  </Link>
+                )}
               </nav>
             </SheetContent>
           </Sheet>
