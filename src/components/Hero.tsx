@@ -7,31 +7,31 @@ const Hero = () => {
     <section id="inicio" className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-muted/50 to-background z-0" />
 
-      <div className="container relative z-10 pt-6 pb-12 md:pt-8 md:pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 text-center">
-            <h1 className="text-xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
+      <div className="container relative z-10 px-4 pt-6 pb-12 md:pt-8 md:pb-20">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="space-y-6 md:space-y-8 text-center lg:text-left">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground">
               Núcleo de Nefrologia e Urologia Veterinárias em Recife
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
               Nossa missão é transformar Ciência em cuidado: educação para prevenir, diagnosticar cedo e tratar cães e
               gatos com doenças do trato urinário.
             </p>
           </div>
 
-          <div className="space-y-8">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-3xl blur-3xl" />
+          <div className="space-y-6 md:space-y-8">
+            <div className="relative px-4 md:px-0">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-accent/20 rounded-2xl md:rounded-3xl blur-3xl" />
               <img
                 src={heroImage}
                 alt="Cão e gato saudáveis em ambiente veterinário"
-                className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
+                className="relative rounded-2xl md:rounded-3xl shadow-2xl w-full h-auto object-cover"
               />
             </div>
 
-            <div className="relative">
-              <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4 text-center">
+            <div className="relative px-4 md:px-0">
+              <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-foreground mb-4 text-center">
                 Dicas sobre saúde renal
               </h3>
               <Carousel
