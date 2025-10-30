@@ -107,17 +107,8 @@ const Knowledge = () => {
                         </div>
                         <CardTitle className="text-xl">{article.title}</CardTitle>
                       </CardHeader>
-                      <CardContent className="space-y-4">
+                      <CardContent>
                         <CardDescription>{article.description}</CardDescription>
-                        <Button variant="outline" className="w-full" asChild>
-                          <a
-                            href={article.link}
-                            className="flex items-center justify-center gap-2 text-accent hover:text-accent"
-                          >
-                            Ler artigo
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        </Button>
                       </CardContent>
                     </Card>
                   ))}
