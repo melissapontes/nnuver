@@ -27,7 +27,7 @@ const ServicesSection = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">Saúde urinária em foco!</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto justify-items-center">
           {services.map((service, index) => {
             const Icon = service.icon;
 
