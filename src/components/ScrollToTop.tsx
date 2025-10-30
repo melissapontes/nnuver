@@ -9,14 +9,19 @@ export default function ScrollToTop() {
     if (hash) {
       const id = hash.replace("#", "");
       // Wait for the DOM to paint the new route before querying the element
-      requestAnimationFrame(() => {
+      setTimeout(() => {
         const el = document.getElementById(id);
         if (el) {
           const headerOffset = 80; // compensate sticky header height
           const y = el.getBoundingClientRect().top + window.scrollY - headerOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
         }
-      });
+        // Also handle tab clicks in Knowledge page
+        const tabTrigger = document.querySelector(`[value="${id}"]`);
+        if (tabTrigger instanceof HTMLElement) {
+          tabTrigger.click();
+        }
+      }, 100);
       return;
     }
 
