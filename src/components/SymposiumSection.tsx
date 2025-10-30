@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const SymposiumSection = () => {
   return (
@@ -51,12 +50,16 @@ const SymposiumSection = () => {
                   </div>
                 </div>
 
-                <Link to="/conhecimento#eventos">
+                <a 
+                  href="https://www.sympla.com.br/evento/1-simposio-nnuver-de-nefrologia-e-urologia-veterinarias/3192930" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   <Button size="lg" className="group shadow-lg">
                     Inscreva-se
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
