@@ -32,7 +32,7 @@ const Hero = () => {
 
             <div className="relative">
               <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4 text-center">
-                Assista nossas lives
+                Dicas sobre saúde renal
               </h3>
               <Carousel
                 opts={{
@@ -43,47 +43,26 @@ const Hero = () => {
               >
                 <CarouselContent>
                   <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                    <Card className="border-border">
-                      <CardContent className="p-4">
-                        <div className="aspect-video">
-                          <iframe
-                            className="w-full h-full rounded-lg"
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="Vídeo 1"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          />
-                        </div>
+                    <Card className="border-border h-full">
+                      <CardContent className="p-6 space-y-4">
+                        <h4 className="text-lg font-semibold text-foreground">
+                          Você sabe o que os rins fazem pelo seu pet?
+                        </h4>
+                        <p className="text-muted-foreground">
+                          Descubra porque eles são vitais para a saúde do cão e do gato.
+                        </p>
                       </CardContent>
                     </Card>
                   </CarouselItem>
                   <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                    <Card className="border-border">
-                      <CardContent className="p-4">
-                        <div className="aspect-video">
-                          <iframe
-                            className="w-full h-full rounded-lg"
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="Vídeo 2"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          />
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                    <Card className="border-border">
-                      <CardContent className="p-4">
-                        <div className="aspect-video">
-                          <iframe
-                            className="w-full h-full rounded-lg"
-                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                            title="Vídeo 3"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          />
-                        </div>
+                    <Card className="border-border h-full">
+                      <CardContent className="p-6 space-y-4">
+                        <h4 className="text-lg font-semibold text-foreground">
+                          Função dos rins: Filtração
+                        </h4>
+                        <p className="text-muted-foreground">
+                          Os rins filtram o sangue, removendo resíduos do organismo.
+                        </p>
                       </CardContent>
                     </Card>
                   </CarouselItem>
