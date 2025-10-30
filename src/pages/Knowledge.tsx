@@ -128,10 +128,10 @@ const Knowledge = () => {
                             </div>
                             <div className="flex-1">
                               {evento.registrationOpen && (
-                                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-3 py-1 rounded-full text-xs font-bold mb-2 shadow-md animate-pulse">
+                                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-violet-600 text-white px-3 py-1 rounded-full text-xs font-bold mb-2 shadow-md animate-pulse">
                                   <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-foreground opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-foreground"></span>
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
                                   </span>
                                   Inscrições Abertas
                                 </div>
