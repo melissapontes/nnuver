@@ -30,6 +30,8 @@ const Hero = () => {
               />
             </div>
 
+            {/* Seção temporariamente desabilitada para corrigir responsividade */}
+            {/* 
             <div className="relative px-4 md:px-0">
               <h3 className="text-lg md:text-xl lg:text-2xl font-semibold text-foreground mb-4 text-center">
                 Dicas sobre saúde renal
@@ -119,6 +121,7 @@ const Hero = () => {
                 <CarouselNext className="hidden md:flex md:right-0 md:h-10 md:w-10" />
               </Carousel>
             </div>
+            */}
           </div>
         </div>
       </div>
