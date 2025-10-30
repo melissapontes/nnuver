@@ -43,7 +43,7 @@ const Hero = () => {
               >
                 <CarouselContent>
                   <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                    <Card className="border-border h-full">
+                    <Card className="border-2 border-[#00d4aa] h-full">
                       <CardContent className="p-6 space-y-4">
                         <h4 className="text-lg font-semibold text-foreground">
                           Você sabe o que os rins fazem pelo seu pet?
@@ -55,7 +55,7 @@ const Hero = () => {
                     </Card>
                   </CarouselItem>
                   <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                    <Card className="border-border h-full">
+                    <Card className="border-2 border-[#00d4aa] h-full">
                       <CardContent className="p-6 space-y-4">
                         <h4 className="text-lg font-semibold text-foreground">
                           Função dos rins: Filtração
