@@ -7,28 +7,10 @@ import { Button } from "@/components/ui/button";
 
 const articles = [
   {
-    title: "Doença Renal Crônica em Cães",
-    description: "Entenda as causas, sintomas e tratamentos da IRC em cães",
+    title: "Em breve",
+    description: "Artigos e orientações sobre saúde renal de cães e gatos",
     link: "#",
-    category: "Nefrologia",
-  },
-  {
-    title: "Doença Renal em Gatos",
-    description: "Guia completo sobre manejo e cuidados renais felinos",
-    link: "#",
-    category: "Nefrologia",
-  },
-  {
-    title: "Infecção do Trato Urinário",
-    description: "Diagnóstico e tratamento de ITU em pequenos animais",
-    link: "#",
-    category: "Urologia",
-  },
-  {
-    title: "Urolitíase em Cães e Gatos",
-    description: "Prevenção e manejo de cálculos urinários",
-    link: "#",
-    category: "Urologia",
+    category: "Nefrologia e Urologia",
   },
 ];
 
