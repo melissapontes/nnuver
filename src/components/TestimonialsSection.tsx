@@ -71,7 +71,7 @@ const TestimonialsSection = () => {
                     />
                   </div>
                 ) : (
-                  <Quote className="h-8 w-8 text-primary/40" aria-hidden="true" />
+                  <Quote className="h-8 w-8 text-[#00d4aa]/40" aria-hidden="true" />
                 )}
                 <div className="border-t border-border pt-4">
                   <p className="font-semibold text-card-foreground">{testimonial.author}</p>

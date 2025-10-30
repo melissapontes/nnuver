@@ -33,8 +33,8 @@ const ServicesSection = () => {
             const cardContent = (
               <Card className="border-border hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-card h-full cursor-pointer">
                 <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-primary" aria-hidden="true" />
+                  <div className="h-12 w-12 rounded-lg bg-[#00d4aa]/10 flex items-center justify-center mb-4">
+                    <Icon className="h-6 w-6 text-[#00d4aa]" aria-hidden="true" />
                   </div>
                   <CardTitle className="text-xl text-card-foreground">{service.title}</CardTitle>
                 </CardHeader>

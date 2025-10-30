@@ -9,27 +9,27 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-foreground">Fale com a gente</h3>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
-                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                <Phone className="h-4 w-4 text-[#00d4aa]" aria-hidden="true" />
                 <span>Fred Cunegundes - (81) 99786-5392</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
-                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                <Phone className="h-4 w-4 text-[#00d4aa]" aria-hidden="true" />
                 <span>Melissa Pontes - (81) 99872-4964</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
-                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                <Phone className="h-4 w-4 text-[#00d4aa]" aria-hidden="true" />
                 <span>Telga Lucena Craveiro - (81) 99212-9805</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
-                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                <Phone className="h-4 w-4 text-[#00d4aa]" aria-hidden="true" />
                 <span>Elton Medeiros - (81) 99928-1513</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground justify-center md:justify-start">
-                <Phone className="h-4 w-4 text-primary" aria-hidden="true" />
+                <Phone className="h-4 w-4 text-[#00d4aa]" aria-hidden="true" />
                 <span>Allan Kardec - (81) 99974-3183</span>
               </li>
               <li className="flex items-start gap-2 text-muted-foreground justify-center md:justify-start">
-                <MapPin className="h-4 w-4 text-primary mt-0.5" aria-hidden="true" />
+                <MapPin className="h-4 w-4 text-[#00d4aa] mt-0.5" aria-hidden="true" />
                 <span>Recife, PE</span>
               </li>
             </ul>
@@ -42,7 +42,7 @@ const Footer = () => {
                 href="https://www.instagram.com/nnuver.vet/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="h-10 w-10 rounded-full bg-[#00d4aa]/10 flex items-center justify-center text-[#00d4aa] hover:bg-[#00d4aa] hover:text-white transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />

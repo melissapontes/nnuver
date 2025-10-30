@@ -69,7 +69,7 @@ const Header = () => {
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon" aria-label="Menu">
-                <Menu className="h-5 w-5" />
+                <Menu className="h-5 w-5 text-[#00d4aa]" />
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
@@ -129,7 +129,7 @@ const Header = () => {
             onClick={() => setIsDark(!isDark)}
             aria-label={isDark ? "Ativar modo claro" : "Ativar modo escuro"}
           >
-            {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            {isDark ? <Sun className="h-5 w-5 text-[#00d4aa]" /> : <Moon className="h-5 w-5 text-[#00d4aa]" />}
           </Button>
         </div>
       </div>
