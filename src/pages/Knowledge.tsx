@@ -20,6 +20,7 @@ const eventos = [
     description: "Nefrologia e Urologia Veterinárias",
     link: "https://www.sympla.com.br/evento/1-simposio-nnuver-de-nefrologia-e-urologia-veterinarias/3192930",
     date: "Dezembro 2025",
+    registrationOpen: true,
   },
   {
     title: "Nefro em Foco",
@@ -126,6 +127,15 @@ const Knowledge = () => {
                               <Calendar className="h-6 w-6 text-[#00d4aa]" />
                             </div>
                             <div className="flex-1">
+                              {evento.registrationOpen && (
+                                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-3 py-1 rounded-full text-xs font-bold mb-2 shadow-md animate-pulse">
+                                  <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-foreground opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-foreground"></span>
+                                  </span>
+                                  Inscrições Abertas
+                                </div>
+                              )}
                               <div className="flex items-center gap-2 mb-2">
                                 <CardTitle className="text-xl">
                                   <a
