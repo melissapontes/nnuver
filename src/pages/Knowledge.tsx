@@ -79,15 +79,15 @@ const Knowledge = () => {
             <Tabs defaultValue="articles" className="w-full">
               <TabsList className="grid w-full max-w-2xl mx-auto grid-cols-3 mb-12">
                 <TabsTrigger value="articles" className="flex items-center gap-2">
-                  <BookOpen className="h-4 w-4" />
+                  <BookOpen className="h-4 w-4 text-[#00d4aa]" />
                   Artigos
                 </TabsTrigger>
                 <TabsTrigger value="eventos" className="flex items-center gap-2">
-                  <Calendar className="h-4 w-4" />
+                  <Calendar className="h-4 w-4 text-[#00d4aa]" />
                   Eventos
                 </TabsTrigger>
                 <TabsTrigger value="websites" className="flex items-center gap-2">
-                  <Globe className="h-4 w-4" />
+                  <Globe className="h-4 w-4 text-[#00d4aa]" />
                   Sites
                 </TabsTrigger>
               </TabsList>
@@ -98,8 +98,8 @@ const Knowledge = () => {
                     <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardHeader>
                         <div className="flex items-start justify-between mb-2">
-                          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                            <BookOpen className="h-5 w-5 text-primary" />
+                          <div className="h-10 w-10 rounded-lg bg-[#00d4aa]/10 flex items-center justify-center">
+                            <BookOpen className="h-5 w-5 text-[#00d4aa]" />
                           </div>
                           <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
                             {article.category}
@@ -122,8 +122,8 @@ const Knowledge = () => {
                       <CardHeader>
                         <div className="flex items-start justify-between gap-4">
                           <div className="flex items-start gap-4 flex-1">
-                            <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                              <Calendar className="h-6 w-6 text-primary" />
+                            <div className="h-12 w-12 rounded-lg bg-[#00d4aa]/10 flex items-center justify-center shrink-0">
+                              <Calendar className="h-6 w-6 text-[#00d4aa]" />
                             </div>
                             <div className="flex-1">
                               <div className="flex items-center gap-2 mb-2">
@@ -158,8 +158,8 @@ const Knowledge = () => {
                     <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                       <CardHeader>
                         <div className="flex items-start justify-between mb-2">
-                          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                            <Globe className="h-5 w-5 text-primary" />
+                          <div className="h-10 w-10 rounded-lg bg-[#00d4aa]/10 flex items-center justify-center">
+                            <Globe className="h-5 w-5 text-[#00d4aa]" />
                           </div>
                           <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded">
                             {site.type}
