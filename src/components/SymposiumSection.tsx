@@ -36,7 +36,7 @@ const SymposiumSection = () => {
                   de aprendizado e networking com profissionais especializados na área.
                 </p>
 
-                <div className="flex flex-col gap-2 md:gap-3 mb-6 md:mb-8">
+                <div className="flex flex-col gap-2 md:gap-3">
                   <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground font-medium">
                     <div className="bg-primary/10 p-1.5 md:p-2 rounded-lg flex-shrink-0">
                       <Calendar className="w-4 h-4 md:w-5 md:h-5 text-primary" />
