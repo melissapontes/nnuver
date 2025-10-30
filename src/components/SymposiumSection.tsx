@@ -32,8 +32,8 @@ const SymposiumSection = () => {
                 </h2>
 
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Participe do primeiro simpósio sobre nefrologia e urologia veterinárias. Uma excelente oportunidade de
-                  aprendizado e networking com profissionais especializados na área.
+                  Participe do 1º simpósio NNUVER sobre nefrologia e urologia veterinárias. Uma excelente oportunidade
+                  de aprendizado e networking com profissionais especializados na área.
                 </p>
 
                 <div className="flex flex-col gap-3 mb-8">
