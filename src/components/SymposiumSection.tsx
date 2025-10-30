@@ -10,13 +10,13 @@ const SymposiumSection = () => {
           <div className="relative bg-gradient-to-br from-card to-card/50 border-2 border-primary rounded-2xl p-8 md:p-12 shadow-2xl overflow-hidden">
             {/* Decorative gradient overlay */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-0" />
-            
+
             <div className="relative z-10 flex flex-col md:flex-row items-start gap-6">
               {/* Icon highlight */}
               <div className="flex-shrink-0 bg-gradient-to-br from-primary to-accent p-4 rounded-2xl shadow-lg">
                 <Calendar className="w-12 h-12 text-primary-foreground" />
               </div>
-              
+
               <div className="flex-1">
                 {/* Badge destaque */}
                 <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-2 rounded-full text-sm font-bold mb-4 shadow-md animate-pulse">
@@ -26,16 +26,16 @@ const SymposiumSection = () => {
                   </span>
                   Inscrições Abertas
                 </div>
-                
+
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
                   1º Simpósio NNUVER
                 </h2>
-                
+
                 <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Participe do primeiro simpósio sobre nefrologia e urologia veterinária. 
-                  Uma oportunidade única de aprendizado e networking com especialistas da área.
+                  Participe do primeiro simpósio sobre nefrologia e urologia veterinárias. Uma excelente oportunidade de
+                  aprendizado e networking com profissionais especializados na área.
                 </p>
-                
+
                 <div className="flex flex-col gap-3 mb-8">
                   <div className="flex items-center gap-3 text-foreground font-medium">
                     <div className="bg-primary/10 p-2 rounded-lg">
@@ -53,7 +53,7 @@ const SymposiumSection = () => {
 
                 <Link to="/conhecimento#eventos">
                   <Button size="lg" className="group shadow-lg">
-                    Ver Detalhes e Inscrever-se
+                    Inscreva-se
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
