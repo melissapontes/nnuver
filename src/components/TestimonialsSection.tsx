@@ -21,7 +21,7 @@ const testimonials = [
     title: "Médica Veterinária",
     description: "Programa de Aprimoramento em Nefrologia de Pequenos Animais – paNpa",
     education:
-      "Mesrtre em Engenharia de Software. Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP",
+      "Mestre e Especialista em Engenharia de Software. Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP. Prêmio Simpósio Internacional de Nefrologia e Urologia Veterinárias – Versão Ibero-Americana - SINUV (2022)",
   },
   {
     image: telgaImage,
