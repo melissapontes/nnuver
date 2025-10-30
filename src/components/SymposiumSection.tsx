@@ -4,39 +4,55 @@ import { Link } from "react-router-dom";
 
 const SymposiumSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-primary/10 via-background to-accent/10">
       <div className="container">
         <div className="max-w-5xl mx-auto">
-          <div className="bg-card border-2 border-primary/20 rounded-2xl p-8 md:p-12 shadow-xl">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="bg-primary/10 p-3 rounded-lg">
-                <Calendar className="w-8 h-8 text-primary" />
+          <div className="relative bg-gradient-to-br from-card to-card/50 border-2 border-primary rounded-2xl p-8 md:p-12 shadow-2xl overflow-hidden">
+            {/* Decorative gradient overlay */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-0" />
+            
+            <div className="relative z-10 flex flex-col md:flex-row items-start gap-6">
+              {/* Icon highlight */}
+              <div className="flex-shrink-0 bg-gradient-to-br from-primary to-accent p-4 rounded-2xl shadow-lg">
+                <Calendar className="w-12 h-12 text-primary-foreground" />
               </div>
+              
               <div className="flex-1">
-                <div className="inline-block bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                {/* Badge destaque */}
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-4 py-2 rounded-full text-sm font-bold mb-4 shadow-md animate-pulse">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-foreground opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-foreground"></span>
+                  </span>
                   Inscrições Abertas
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
                   1º Simpósio NNUVER
                 </h2>
-                <p className="text-lg text-muted-foreground mb-6">
+                
+                <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
                   Participe do primeiro simpósio sobre nefrologia e urologia veterinária. 
                   Uma oportunidade única de aprendizado e networking com especialistas da área.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 text-sm text-muted-foreground mb-8">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Data em breve</span>
+                <div className="flex flex-col gap-3 mb-8">
+                  <div className="flex items-center gap-3 text-foreground font-medium">
+                    <div className="bg-primary/10 p-2 rounded-lg">
+                      <Calendar className="w-5 h-5 text-primary" />
+                    </div>
+                    <span>20 de dezembro de 2025</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Local a confirmar</span>
+                  <div className="flex items-start gap-3 text-foreground font-medium">
+                    <div className="bg-primary/10 p-2 rounded-lg flex-shrink-0">
+                      <MapPin className="w-5 h-5 text-primary" />
+                    </div>
+                    <span>AtualeVet, Rua Padre Giordano, 169, Boa Viagem, Recife - PE</span>
                   </div>
                 </div>
 
                 <Link to="/conhecimento#eventos">
-                  <Button size="lg" className="group">
+                  <Button size="lg" className="group shadow-lg">
                     Ver Detalhes e Inscrever-se
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
