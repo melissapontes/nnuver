@@ -46,13 +46,13 @@ const SymposiumSection = () => {
                     <div className="bg-primary/10 p-2 rounded-lg flex-shrink-0">
                       <MapPin className="w-5 h-5 text-primary" />
                     </div>
-                    <div className="flex flex-col gap-1">
-                      <span>AtualeVet, Rua Padre Giordano, 169, Boa Viagem, Recife - PE</span>
+                    <div className="flex flex-col gap-1.5">
+                      <span>Rua Padre Giordano, 169, Boa Viagem, Recife - PE</span>
                       <a 
                         href="https://www.instagram.com/atuale.vet/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm"
+                        className="flex items-center gap-2 text-[#0EA5E9] hover:text-[#0EA5E9]/80 transition-colors text-sm"
                       >
                         <Instagram className="w-4 h-4" />
                         @atuale.vet
