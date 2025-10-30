@@ -18,11 +18,8 @@ const SymposiumSection = () => {
 
               <div className="flex-1 w-full">
                 {/* Badge destaque */}
-                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-accent text-primary-foreground px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold mb-3 md:mb-4 shadow-md animate-pulse">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-foreground opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-foreground"></span>
-                  </span>
+                <div className="inline-flex items-center gap-2 bg-purple-600 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold mb-3 md:mb-4">
+                  <span className="flex h-2 w-2 rounded-full bg-white"></span>
                   Inscrições Abertas
                 </div>
 

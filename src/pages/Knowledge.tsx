@@ -128,10 +128,8 @@ const Knowledge = () => {
                             </div>
                             <div className="flex-1">
                               {evento.registrationOpen && (
-                                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-violet-600 text-white px-3 py-1 rounded-full text-xs font-bold mb-2 shadow-md">
-                                  <span className="relative flex h-2 w-2">
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
-                                  </span>
+                                <div className="inline-flex items-center gap-2 bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold mb-2">
+                                  <span className="flex h-2 w-2 rounded-full bg-white"></span>
                                   Inscrições Abertas
                                 </div>
                               )}
