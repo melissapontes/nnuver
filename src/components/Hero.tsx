@@ -66,6 +66,54 @@ const Hero = () => {
                       </CardContent>
                     </Card>
                   </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                    <Card className="border-2 border-[#00d4aa] h-full">
+                      <CardContent className="p-6 space-y-4">
+                        <h4 className="text-lg font-semibold text-foreground">
+                          Função dos rins: Equilíbrio
+                        </h4>
+                        <p className="text-muted-foreground">
+                          Os rins auxiliam na regulação do PH sanguíneo.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                    <Card className="border-2 border-[#00d4aa] h-full">
+                      <CardContent className="p-6 space-y-4">
+                        <h4 className="text-lg font-semibold text-foreground">
+                          Função dos rins: Controle da pressão arterial
+                        </h4>
+                        <p className="text-muted-foreground">
+                          Os rins auxiliam na regulação da pressão arterial.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                    <Card className="border-2 border-[#00d4aa] h-full">
+                      <CardContent className="p-6 space-y-4">
+                        <h4 className="text-lg font-semibold text-foreground">
+                          Função dos rins: Endócrina
+                        </h4>
+                        <p className="text-muted-foreground">
+                          Os rins produzem hormônios.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                    <Card className="border-2 border-[#00d4aa] h-full">
+                      <CardContent className="p-6 space-y-4">
+                        <h4 className="text-lg font-semibold text-foreground">
+                          Função dos rins: Regulação hídrica
+                        </h4>
+                        <p className="text-muted-foreground">
+                          Os rins contribuem para a regulação dos níveis de água do corpo.
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious className="left-0 h-12 w-12" />
                 <CarouselNext className="right-0 h-12 w-12" />
