@@ -19,9 +19,9 @@ const testimonials = [
     image: melissaImage,
     author: "Melissa Pontes",
     title: "Médica Veterinária",
-    description: "Prêmio Simpósio Internacional de Nefrologia e Urologia Veterinárias – Versão Ibero-Americana - SINUV (2022)",
+    description: "Atendimento focado no trato urinário de cães e gatos",
     education:
-      "Pós Graduanda em Nefrologia e Urologia de Pequenos Animais – Anclivepa SP. Mestre e Especialista em Engenharia de Software.",
+      "Profissional premiada no Simpósio Internacional de Nefrologia e Urologia Veterinárias – Versão Ibero-Americana (SINUV, 2022). Pós-graduanda em Nefrologia e Urologia de Pequenos Animais (Anclivepa-SP), Mestre e Especialista em Engenharia de Software. Concluiu o Programa de Aprimoramento em Nefrologia de Pequenos Animais (paNpa). Utiliza inteligências artificiais aplicadas à nefrologia e atua como professora nesse tema.",
   },
   {
     image: telgaImage,
