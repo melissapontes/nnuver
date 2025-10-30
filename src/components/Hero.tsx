@@ -41,8 +41,8 @@ const Hero = () => {
                 }}
                 className="w-full"
               >
-                <CarouselContent>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                <CarouselContent className="ml-0">
+                  <CarouselItem className="pl-0 md:pl-4 md:basis-1/2 lg:basis-1/2">
                     <Card className="border-2 border-[#00d4aa] h-full">
                       <CardContent className="p-6 space-y-4">
                         <h4 className="text-lg font-semibold text-foreground">
@@ -54,7 +54,7 @@ const Hero = () => {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                  <CarouselItem className="pl-0 md:pl-4 md:basis-1/2 lg:basis-1/2">
                     <Card className="border-2 border-[#00d4aa] h-full">
                       <CardContent className="p-6 space-y-4">
                         <h4 className="text-lg font-semibold text-foreground">
@@ -66,7 +66,7 @@ const Hero = () => {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                  <CarouselItem className="pl-0 md:pl-4 md:basis-1/2 lg:basis-1/2">
                     <Card className="border-2 border-[#00d4aa] h-full">
                       <CardContent className="p-6 space-y-4">
                         <h4 className="text-lg font-semibold text-foreground">
@@ -78,7 +78,7 @@ const Hero = () => {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                  <CarouselItem className="pl-0 md:pl-4 md:basis-1/2 lg:basis-1/2">
                     <Card className="border-2 border-[#00d4aa] h-full">
                       <CardContent className="p-6 space-y-4">
                         <h4 className="text-lg font-semibold text-foreground">
@@ -90,7 +90,7 @@ const Hero = () => {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                  <CarouselItem className="pl-0 md:pl-4 md:basis-1/2 lg:basis-1/2">
                     <Card className="border-2 border-[#00d4aa] h-full">
                       <CardContent className="p-6 space-y-4">
                         <h4 className="text-lg font-semibold text-foreground">
@@ -102,7 +102,7 @@ const Hero = () => {
                       </CardContent>
                     </Card>
                   </CarouselItem>
-                  <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                  <CarouselItem className="pl-0 md:pl-4 md:basis-1/2 lg:basis-1/2">
                     <Card className="border-2 border-[#00d4aa] h-full">
                       <CardContent className="p-6 space-y-4">
                         <h4 className="text-lg font-semibold text-foreground">
@@ -115,8 +115,8 @@ const Hero = () => {
                     </Card>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious className="left-0 h-12 w-12" />
-                <CarouselNext className="right-0 h-12 w-12" />
+                <CarouselPrevious className="hidden md:flex md:left-0 md:h-10 md:w-10" />
+                <CarouselNext className="hidden md:flex md:right-0 md:h-10 md:w-10" />
               </Carousel>
             </div>
           </div>
