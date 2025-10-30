@@ -128,10 +128,15 @@ const Knowledge = () => {
                             </div>
                             <div className="flex-1">
                               {evento.registrationOpen && (
-                                <div className="inline-flex items-center gap-2 bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-bold mb-2">
+                                <a 
+                                  href={evento.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1 rounded-full text-xs font-bold mb-2 transition-colors"
+                                >
                                   <span className="flex h-2 w-2 rounded-full bg-white"></span>
                                   Inscrições Abertas
-                                </div>
+                                </a>
                               )}
                               <div className="flex items-center gap-2 mb-2">
                                 <CardTitle className="text-xl">

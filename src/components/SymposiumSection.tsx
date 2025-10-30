@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Calendar, MapPin, ArrowRight, Instagram } from "lucide-react";
+import { Calendar, MapPin, Instagram } from "lucide-react";
 
 const SymposiumSection = () => {
   return (
@@ -18,10 +17,15 @@ const SymposiumSection = () => {
 
               <div className="flex-1 w-full">
                 {/* Badge destaque */}
-                <div className="inline-flex items-center gap-2 bg-purple-600 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold mb-3 md:mb-4">
+                <a 
+                  href="https://www.sympla.com.br/evento/1-simposio-nnuver-de-nefrologia-e-urologia-veterinarias/3192930" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold mb-3 md:mb-4 transition-colors"
+                >
                   <span className="flex h-2 w-2 rounded-full bg-white"></span>
                   Inscrições Abertas
-                </div>
+                </a>
 
                 <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
                   1º Simpósio NNUVER
@@ -57,18 +61,6 @@ const SymposiumSection = () => {
                     </div>
                   </div>
                 </div>
-
-                <a 
-                  href="https://www.sympla.com.br/evento/1-simposio-nnuver-de-nefrologia-e-urologia-veterinarias/3192930" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-block w-full md:w-auto"
-                >
-                  <Button size="lg" className="group shadow-lg w-full md:w-auto">
-                    Inscreva-se
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </a>
               </div>
             </div>
           </div>
