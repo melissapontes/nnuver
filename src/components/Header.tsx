@@ -59,14 +59,14 @@ const Header = () => {
           )}
           {isHomePage ? (
             <a
-              href="#depoimentos"
+              href="#sobre-nos"
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               Sobre nós
             </a>
           ) : (
             <Link
-              to="/#depoimentos"
+              to="/#sobre-nos"
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               Sobre nós
@@ -143,7 +143,7 @@ const Header = () => {
                 )}
                 {isHomePage ? (
                   <a
-                    href="#depoimentos"
+                    href="#sobre-nos"
                     className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => setOpen(false)}
                   >
@@ -151,7 +151,7 @@ const Header = () => {
                   </a>
                 ) : (
                   <Link
-                    to="/#depoimentos"
+                    to="/#sobre-nos"
                     className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => setOpen(false)}
                   >
