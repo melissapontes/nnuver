@@ -44,14 +44,14 @@ const Header = () => {
           )}
           {isHomePage ? (
             <a
-              href="#servicos"
+              href="#educacao"
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               Educação
             </a>
           ) : (
             <Link
-              to="/#servicos"
+              to="/#educacao"
               className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
             >
               Educação
@@ -126,7 +126,7 @@ const Header = () => {
                 )}
                 {isHomePage ? (
                   <a
-                    href="#servicos"
+                    href="#educacao"
                     className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => setOpen(false)}
                   >
@@ -134,7 +134,7 @@ const Header = () => {
                   </a>
                 ) : (
                   <Link
-                    to="/#servicos"
+                    to="/#educacao"
                     className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => setOpen(false)}
                   >
