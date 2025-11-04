@@ -56,7 +56,7 @@ const SymposiumSection = () => {
                         className="flex items-center gap-1.5 text-[#0EA5E9] hover:text-[#0EA5E9]/80 transition-colors text-xs md:text-sm"
                       >
                         <Instagram className="w-3.5 h-3.5 md:w-4 md:h-4" />
-                        @atuale.vet
+                        @atualevet
                       </a>
                     </div>
                   </div>
