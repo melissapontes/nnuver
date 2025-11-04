@@ -17,9 +17,9 @@ const SymposiumSection = () => {
 
               <div className="flex-1 w-full">
                 {/* Badge destaque */}
-                <a 
-                  href="https://www.sympla.com.br/evento/1-simposio-nnuver-de-nefrologia-e-urologia-veterinarias/3192930" 
-                  target="_blank" 
+                <a
+                  href="https://www.sympla.com.br/evento/1-simposio-nnuver-de-nefrologia-e-urologia-veterinarias/3192930"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full text-xs md:text-sm font-bold mb-3 md:mb-4 transition-colors"
                 >
@@ -49,9 +49,9 @@ const SymposiumSection = () => {
                     </div>
                     <div className="flex flex-col gap-1.5">
                       <span className="break-words">Rua Padre Giordano, 169, Boa Viagem, Recife - PE</span>
-                      <a 
-                        href="https://www.instagram.com/atuale.vet/" 
-                        target="_blank" 
+                      <a
+                        href="https://www.instagram.com/atualevet/"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1.5 text-[#0EA5E9] hover:text-[#0EA5E9]/80 transition-colors text-xs md:text-sm"
                       >
