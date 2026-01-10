@@ -3,14 +3,14 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BookOpen, Calendar, Globe, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const articles = [
   {
     title: "Um exame simples que revela MUITO: por que a urinálise deveria estar no check-up do seu pet",
     description:
       "A urinálise é um exame valioso para detectar alterações precoces nos rins, bexiga, pâncreas e fígado do seu cão ou gato.",
-    link: "/articles/urinalise-check-up-pet.pdf",
+    link: "/artigos/urinalise-check-up-pet",
     category: "Nefrologia e Urologia",
   },
 ];
@@ -97,7 +97,7 @@ const Knowledge = () => {
               <TabsContent value="articles" className="space-y-6">
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {articles.map((article, index) => (
-                    <a key={index} href={article.link} target="_blank" rel="noopener noreferrer" className="block">
+                    <Link key={index} to={article.link} className="block">
                       <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full cursor-pointer">
                         <CardHeader>
                           <div className="flex items-start justify-between mb-2">
@@ -114,7 +114,7 @@ const Knowledge = () => {
                           <CardDescription>{article.description}</CardDescription>
                         </CardContent>
                       </Card>
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </TabsContent>
