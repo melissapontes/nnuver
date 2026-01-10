@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const articles = [
   {
-    title: "Um exame simples que revela MUITO: por que a urinálise deveria estar no check-up do seu pet",
+    title: "Um exame simples que revela MUITO: por que a urinálise deve estar no check-up do seu pet",
     description:
       "A urinálise é um exame valioso para detectar alterações precoces nos rins, bexiga, pâncreas e fígado do seu cão ou gato.",
     link: "/artigos/urinalise-check-up-pet",
