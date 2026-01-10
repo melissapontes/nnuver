@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 
 const articles = [
   {
-    title: "Em breve",
-    description: "Artigos e orientações sobre saúde renal de cães e gatos",
-    link: "#",
+    title: "Um exame simples que revela MUITO: por que a urinálise deveria estar no check-up do seu pet",
+    description: "A urinálise é um dos exames mais valiosos para detectar alterações precoces nos rins, bexiga, pâncreas e fígado do seu cão ou gato.",
+    link: "/articles/urinalise-check-up-pet.pdf",
     category: "Nefrologia e Urologia",
   },
 ];
@@ -96,22 +96,30 @@ const Knowledge = () => {
               <TabsContent value="articles" className="space-y-6">
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                   {articles.map((article, index) => (
-                    <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                      <CardHeader>
-                        <div className="flex items-start justify-between mb-2">
-                          <div className="h-10 w-10 rounded-lg bg-[#00d4aa]/10 flex items-center justify-center">
-                            <BookOpen className="h-5 w-5 text-[#00d4aa]" />
+                    <a 
+                      key={index}
+                      href={article.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full cursor-pointer">
+                        <CardHeader>
+                          <div className="flex items-start justify-between mb-2">
+                            <div className="h-10 w-10 rounded-lg bg-[#00d4aa]/10 flex items-center justify-center">
+                              <BookOpen className="h-5 w-5 text-[#00d4aa]" />
+                            </div>
+                            <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
+                              {article.category}
+                            </span>
                           </div>
-                          <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded">
-                            {article.category}
-                          </span>
-                        </div>
-                        <CardTitle className="text-xl">{article.title}</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <CardDescription>{article.description}</CardDescription>
-                      </CardContent>
-                    </Card>
+                          <CardTitle className="text-xl text-accent">{article.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <CardDescription>{article.description}</CardDescription>
+                        </CardContent>
+                      </Card>
+                    </a>
                   ))}
                 </div>
               </TabsContent>
