@@ -12,6 +12,15 @@ const articles = [
       "A urinálise é um exame valioso para detectar alterações precoces nos rins, bexiga, pâncreas e fígado do seu cão ou gato.",
     link: "/artigos/urinalise-check-up-pet",
     category: "Nefrologia e Urologia",
+    external: false,
+  },
+  {
+    title: "Correção de ligadura acidental de ureter após realização de ovariohisterectomia em cadela com piometra: relato de caso",
+    description:
+      "Relato de caso sobre correção cirúrgica de ligadura acidental de ureter em cadela submetida a ovariohisterectomia.",
+    link: "https://ojs.revistaveterinaria.com.br/index.php/BJVM/article/view/1406/1287",
+    category: "Urologia",
+    external: true,
   },
 ];
 
@@ -96,8 +105,8 @@ const Knowledge = () => {
 
               <TabsContent value="articles" className="space-y-6">
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {articles.map((article, index) => (
-                    <Link key={index} to={article.link} className="block">
+                  {articles.map((article, index) => {
+                    const cardContent = (
                       <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full cursor-pointer">
                         <CardHeader>
                           <div className="flex items-start justify-between mb-2">
@@ -108,14 +117,27 @@ const Knowledge = () => {
                               {article.category}
                             </span>
                           </div>
-                          <CardTitle className="text-xl text-accent">{article.title}</CardTitle>
+                          <CardTitle className="text-xl text-accent flex items-center gap-2">
+                            {article.title}
+                            {article.external && <ExternalLink className="h-4 w-4 shrink-0" />}
+                          </CardTitle>
                         </CardHeader>
                         <CardContent>
                           <CardDescription>{article.description}</CardDescription>
                         </CardContent>
                       </Card>
-                    </Link>
-                  ))}
+                    );
+
+                    return article.external ? (
+                      <a key={index} href={article.link} target="_blank" rel="noopener noreferrer" className="block">
+                        {cardContent}
+                      </a>
+                    ) : (
+                      <Link key={index} to={article.link} className="block">
+                        {cardContent}
+                      </Link>
+                    );
+                  })}
                 </div>
               </TabsContent>
 
