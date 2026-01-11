@@ -15,10 +15,11 @@ const articles = [
     external: false,
   },
   {
-    title: "Correção de ligadura acidental de ureter após realização de ovariohisterectomia em cadela com piometra: relato de caso",
+    title:
+      "Correção de ligadura acidental de ureter após realização de ovariohisterectomia em cadela com piometra: relato de caso",
     description:
       "Relato de caso sobre correção cirúrgica de ligadura acidental de ureter em cadela submetida a ovariohisterectomia.",
-    link: "https://ojs.revistaveterinaria.com.br/index.php/BJVM/article/view/1406",
+    link: "https://ojs.observatoriolatinoamericano.com/ojs/index.php/olel/article/view/10426/6570",
     category: "Urologia",
     external: true,
   },
